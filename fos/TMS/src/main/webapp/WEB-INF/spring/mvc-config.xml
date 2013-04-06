@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+	<bean id="handlerMapping"
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="requestContextInterceptor" />
+				<ref bean="loginInterceptor" />
+			</list>
+		</property>
+	</bean>
+	<bean id="sessionContext" class="com.hitisoft.fw.session.SessionContext"
+		scope="session">
+		<aop:scoped-proxy />
+	</bean>
+	<bean id="requestContext" class="com.hitisoft.fw.session.RequestContext"
+		scope="request">
+		<aop:scoped-proxy />
+	</bean>
+	<bean id="htRequest" class="com.hitisoft.fw.web.HtRequest"
+		scope="request">
+		<aop:scoped-proxy />
+	</bean>
+	<bean id="xmlMarshaller" class="com.hitisoft.fw.oxm.xstream.XstreamMarshaller">
+		<property name="messageType" value="xml" />
+	</bean>
+	<bean id="jsonMarshaller" class="com.hitisoft.fw.oxm.xstream.XstreamMarshaller">
+		<property name="messageType" value="json" />
+	</bean>
+	<bean id="formMarshaller" class="com.hitisoft.fw.oxm.xstream.XstreamMarshaller">
+		<property name="messageType" value="form" />
+	</bean>
+	<bean id="viewResolver" class="com.hitisoft.fw.view.ContentViewResolver">
+		<property name="cache" value="false" />
+	</bean>
+	<bean id="xmlView"
+		class="com.hitisoft.fw.view.XmlView">
+		<property name="contentType" value="text/xml;charset=UTF-8" />
+		<property name="modelKey" value="htResponse" />
+		<property name="marshaller" ref="xmlMarshaller" />
+	</bean>
+	<bean id="jsonView" class="com.hitisoft.fw.view.JsonView">
+		<property name="contentType" value="text/json;charset=UTF-8" />
+		<property name="modelKey" value="htResponse" />
+		<property name="marshaller" ref="jsonMarshaller" />
+	</bean>
+	<bean id="formView" class="com.hitisoft.fw.view.JsonView">
+		<property name="contentType" value="text/html;charset=UTF-8" />
+		<property name="modelKey" value="htResponse" />
+		<property name="marshaller" ref="formMarshaller" />
+	</bean>
+	<bean id="redirectView" class="com.hitisoft.fw.view.RedirectView"/>
+</beans>

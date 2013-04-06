@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../ehcache.xsd">
+	<diskStore path="/mnt/memory/temp" />
+	<defaultCache 
+		maxElementsInMemory="10000" 
+		eternal="false"
+		timeToIdleSeconds="120" 
+		timeToLiveSeconds="120" 
+		overflowToDisk="true" />
+	<cache name="haitai.fosws.entity.table.WConsign" 
+		maxElementsInMemory="1000"
+		eternal="false" 
+		timeToIdleSeconds="300" 
+		timeToLiveSeconds="600"
+		overflowToDisk="true" />
+	<cache name="haitai.fosws.entity.table.WInquiry" 
+		maxElementsInMemory="1000"
+		eternal="false" 
+		timeToIdleSeconds="300" 
+		timeToLiveSeconds="600"
+		overflowToDisk="true" />
+	<cache name="haitai.fosws.entity.table.WUser" 
+		maxElementsInMemory="1000"
+		eternal="false" 
+		timeToIdleSeconds="300" 
+		timeToLiveSeconds="600"
+		overflowToDisk="true" />
+
+</ehcache>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__g_159_0</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__F_533_1</property>
+            <property name="value">2008年1月1日</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__T_534_2</property>
+            <property name="value">2040年12月31日</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__dt_685_3</property>
+            <property name="value">账单日期</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__cd_1037_4</property>
+            <property name="value">30</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_1091_5</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__custId_687_6</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__charName_691_7</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consSalesRepId_692_8</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__expeBillStatus_1074_9</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__expeInvoiceStatus_1075_10</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__expeWriteoffStatus_1076_11</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">custId_687_12</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">custId_687_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">dt_685_13</property>
+            <property name="value">2</property>
+        </structure>
+        <structure>
+            <property name="name">dt_685_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">T_534_14</property>
+            <property name="value">2040-12-31</property>
+        </structure>
+        <structure>
+            <property name="name">T_534_type_</property>
+            <property name="value">date</property>
+        </structure>
+        <structure>
+            <property name="name">g_159_15</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">g_159_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">consSalesRepId_692_16</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consSalesRepId_692_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">F_533_17</property>
+            <property name="value">2008-01-01</property>
+        </structure>
+        <structure>
+            <property name="name">F_533_type_</property>
+            <property name="value">date</property>
+        </structure>
+        <structure>
+            <property name="name">expeWriteoffStatus_1076_18</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">expeWriteoffStatus_1076_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">expeInvoiceStatus_1075_19</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">expeInvoiceStatus_1075_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">charName_691_20</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">charName_691_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">expeBillStatus_1074_21</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">expeBillStatus_1074_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_1091_22</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_1091_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">cd_1037_23</property>
+            <property name="value">30</property>
+        </structure>
+        <structure>
+            <property name="name">cd_1037_type_</property>
+            <property name="value">integer</property>
+        </structure>
+    </list-property>
+</report>

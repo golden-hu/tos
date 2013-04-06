@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	<context:property-placeholder location="WEB-INF/fos.properties"/>
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host"><value>${mail.host}</value></property>
+		<property name="port"><value>${mail.port}</value></property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.stmp.auth">true</prop>
+				<prop key="mail.stmp.timeout">25000</prop>
+			</props>
+		</property>
+		<property name="username"><value>${mail.username}</value></property>
+		<property name="password"><value>${mail.password}</value></property>
+	</bean>
+	<bean id="configUtil" class="com.hitisoft.fos.util.ConfigUtil">
+		<property name="dataDir">
+			<value>${fos.dir.data}</value>
+		</property>
+		<property name="initDataDir">
+			<value>${fos.dir.initData}</value>
+		</property>
+		<property name="initSql">
+			<value>${fos.dir.initSql}</value>
+		</property>
+		<property name="templateDir">
+			<value>${fos.dir.template}</value>
+		</property>
+		<property name="tempDir">
+			<value>${fos.dir.temp}</value>
+		</property>
+		<property name="exportDir">
+			<value>${fos.dir.export}</value>
+		</property>
+		<property name="loginUrl">
+			<value>${fos.login.url}</value>
+		</property>
+		<property name="messageAutoFlag">
+			<value>${fos.message.auto}</value>
+		</property>
+		<property name="loginRepeatCheck">
+			<value>${fos.login.repeatcheck}</value>
+		</property>
+		<property name="mailSender">
+			<value>${fos.mail.sender}</value>
+		</property>		
+		<property name="faxSender">
+			<value>${fos.fax.sender}</value>
+		</property>
+		<property name="mysqlDriver">
+			<value>${fos.mysql.driver}</value>
+		</property>
+		<property name="mysqlUrl">
+			<value>${fos.mysql.url}</value>
+		</property>
+		<property name="mysqlUserName">
+			<value>${fos.mysql.username}</value>
+		</property>
+		<property name="mysqlPassword">
+			<value>${fos.mysql.password}</value>
+		</property>
+		<property name="consoleName">
+			<value>${fos.console.name}</value>
+		</property>
+		<property name="consolePassword">
+			<value>${fos.console.password}</value>
+		</property>
+	</bean>
+</beans>

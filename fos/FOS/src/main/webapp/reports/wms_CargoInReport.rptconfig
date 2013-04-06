@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isnull_173_0</property>
+            <property name="value">newDate_173</property>
+        </structure>
+        <structure>
+            <property name="name">newDate_173_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_174_1</property>
+            <property name="value">bsd</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_181_2</property>
+            <property name="value">dateEnd_181</property>
+        </structure>
+        <structure>
+            <property name="name">dateEnd_181_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_219_3</property>
+            <property name="value">cargoOwenrName_219</property>
+        </structure>
+        <structure>
+            <property name="name">cargoOwenrName_219_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_220_4</property>
+            <property name="value">cargoType_220</property>
+        </structure>
+        <structure>
+            <property name="name">cargoType_220_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_221_5</property>
+            <property name="value">storageClass_221</property>
+        </structure>
+        <structure>
+            <property name="name">storageClass_221_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_222_6</property>
+            <property name="value">cargoName_222</property>
+        </structure>
+        <structure>
+            <property name="name">cargoName_222_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_223_7</property>
+            <property name="value">storageDate_223</property>
+        </structure>
+        <structure>
+            <property name="name">storageDate_223_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_275_8</property>
+            <property name="value">entrustno_275</property>
+        </structure>
+        <structure>
+            <property name="name">entrustno_275_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_282_9</property>
+            <property name="value">warehouseName_282</property>
+        </structure>
+        <structure>
+            <property name="name">warehouseName_282_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_283_10</property>
+            <property name="value">areaName_283</property>
+        </structure>
+        <structure>
+            <property name="name">areaName_283_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_284_11</property>
+            <property name="value">blockName_284</property>
+        </structure>
+        <structure>
+            <property name="name">blockName_284_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_174_12</property>
+            <property name="value">bsd</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_174_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

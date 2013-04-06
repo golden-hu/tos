@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__Y_22_0</property>
+            <property name="value">"2008"</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__M_23_1</property>
+            <property name="value">"12"</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__id_24_2</property>
+            <property name="value">"1"</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_196_3</property>
+            <property name="value">HITI</property>
+        </structure>
+        <structure>
+            <property name="name">id_24_4</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">id_24_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">M_23_5</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">M_23_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">Y_22_6</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">Y_22_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_196_7</property>
+            <property name="value">HITI</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_196_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

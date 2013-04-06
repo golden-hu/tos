@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="timing.js"></script>
+</head>
+<body>
+	<div id="timeCon"></div>
+   	<script type="text/javascript">
+       var timeCountDown = new TimeCountDown(1 * 1 * 1 * 60);
+           timeCountDown.setShowCallback(
+        		function( obj ){ // [天, 小时, 分, 秒]
+               		document.getElementById('timeCon').innerHTML = obj[0] + ":" + obj[1] + ":" + obj[2] + ':' + obj[3];
+           		}
+        	);
+           timeCountDown.start();
+   </script>
+   
+   <script>
+	var start = 10;
+	var step = -1;
+	function count(){
+		document.getElementById("div1").innerHTML = start;
+		start += step;
+		if(start==0){
+			//location.href="http://www.baidu.com";
+			//window.open('http://www.baidu.com');
+		}
+		if(start < 0){
+			start = 10;
+		}
+		setTimeout("count()",1000);
+	}
+	window.onload = count;
+	</script>
+<div id="div1"></div>
+</body>
+</html>

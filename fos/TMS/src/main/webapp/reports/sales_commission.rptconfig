@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__Y_101_0</property>
+            <property name="value">"2008"</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__M_102_1</property>
+            <property name="value">"12"</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_136_2</property>
+            <property name="value">HITI</property>
+        </structure>
+        <structure>
+            <property name="name">M_102_3</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">M_102_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">Y_101_4</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">Y_101_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_136_5</property>
+            <property name="value">HITI</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_136_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

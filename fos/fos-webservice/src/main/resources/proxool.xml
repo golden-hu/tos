@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool-config>
+	<proxool>
+		<alias>foswsdb</alias>
+		<driver-url>
+			jdbc:mysql://localhost/fos
+		</driver-url>
+		<driver-class>com.mysql.jdbc.Driver</driver-class>
+		<driver-properties>
+			<property name="user" value="fos" />
+			<property name="password" value="fos" />
+		</driver-properties>
+		<maximum-connection-count>50</maximum-connection-count>
+		<minimum-connection-count>5</minimum-connection-count>
+		<house-keeping-sleep-time>90000</house-keeping-sleep-time>
+		<prototype-count>5</prototype-count>
+	</proxool>
+</proxool-config>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__pDate_349_0</property>
+            <property name="value">2013-02-25</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_351_1</property>
+            <property name="value">BSD</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__pDateEnd_506_2</property>
+            <property name="value">2013-02-25</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_619_3</property>
+            <property name="value">cargoOwenrName_619</property>
+        </structure>
+        <structure>
+            <property name="name">cargoOwenrName_619_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_620_4</property>
+            <property name="value">cargoType_620</property>
+        </structure>
+        <structure>
+            <property name="name">cargoType_620_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_621_5</property>
+            <property name="value">storageClass_621</property>
+        </structure>
+        <structure>
+            <property name="name">storageClass_621_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_622_6</property>
+            <property name="value">cargoName_622</property>
+        </structure>
+        <structure>
+            <property name="name">cargoName_622_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_659_7</property>
+            <property name="value">status_659</property>
+        </structure>
+        <structure>
+            <property name="name">status_659_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_660_8</property>
+            <property name="value">blockName_660</property>
+        </structure>
+        <structure>
+            <property name="name">blockName_660_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_661_9</property>
+            <property name="value">areaName_661</property>
+        </structure>
+        <structure>
+            <property name="name">areaName_661_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_662_10</property>
+            <property name="value">warehouseName_662</property>
+        </structure>
+        <structure>
+            <property name="name">warehouseName_662_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">__isnull_664_11</property>
+            <property name="value">storageDate_664</property>
+        </structure>
+        <structure>
+            <property name="name">storageDate_664_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pDateEnd_506_12</property>
+            <property name="value">2013-02-25</property>
+        </structure>
+        <structure>
+            <property name="name">pDateEnd_506_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_351_13</property>
+            <property name="value">BSD</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_351_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">pDate_349_14</property>
+            <property name="value">2013-02-25</property>
+        </structure>
+        <structure>
+            <property name="name">pDate_349_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

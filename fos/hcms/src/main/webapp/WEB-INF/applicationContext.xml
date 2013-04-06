@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="hcmspu" />
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory"
+			ref="entityManagerFactory" />
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>clssspath:exception</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>org.logicalcobwebs.proxool.ProxoolDriver</value>
+		</property>
+		<property name="url">
+			<value>proxool.hcmsdb</value>
+		</property>
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+	<context:component-scan base-package="haitai" />
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	<bean id="serviceAspect" class="haitai.fw.aop.ServiceAspect"></bean>
+	<bean id="daoAspect" class="haitai.fw.aop.DaoAspect"></bean>
+	<bean id="mailSender"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="www.hitisoft.com"></property>
+		<property name="port" value="25"></property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.stmp.auth">true</prop>
+				<prop key="mail.stmp.timeout">25000</prop>
+			</props>
+		</property>
+		<property name="username" value="yonggang.guo"></property>
+		<property name="password" value="guo.123"></property>
+	</bean>
+	<bean id="mailManager" class="haitai.fw.message.MailManager">
+		<property name="sender" ref="mailSender"></property>
+	</bean>
+	<bean id="ActionLogUtil"
+		class="haitai.fw.util.ActionLogUtil">
+	</bean>
+	<bean id="SpringContextUtil" 
+		class="haitai.fw.util.SpringContextUtil">
+	</bean>
+</beans>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__g_211_0</property>
+            <property name="value">不分组</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__F_298_1</property>
+            <property name="value">2008年1月1日</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__T_299_2</property>
+            <property name="value">2008年1月1日</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__dt_301_3</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_336_4</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consNo_322_5</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__shliCode_314_6</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__custId_315_7</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consBizClass_316_8</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consSalesRepId_317_9</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consShipType_319_10</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__grouId_321_11</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__consBizType_335_12</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">dt_301_13</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">dt_301_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">custId_315_14</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">custId_315_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">g_211_15</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">g_211_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">F_298_16</property>
+            <property name="value">2008-01-01</property>
+        </structure>
+        <structure>
+            <property name="name">F_298_type_</property>
+            <property name="value">date</property>
+        </structure>
+        <structure>
+            <property name="name">consBizType_335_17</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consBizType_335_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">consBizClass_316_18</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consBizClass_316_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">T_299_19</property>
+            <property name="value">2008-01-01</property>
+        </structure>
+        <structure>
+            <property name="name">T_299_type_</property>
+            <property name="value">date</property>
+        </structure>
+        <structure>
+            <property name="name">consSalesRepId_317_20</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consSalesRepId_317_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">grouId_321_21</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">grouId_321_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">consNo_322_22</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consNo_322_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">consShipType_319_23</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">consShipType_319_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_336_24</property>
+            <property name="value">0</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_336_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">shliCode_314_25</property>
+            <property name="value"></property>
+        </structure>
+        <structure>
+            <property name="name">shliCode_314_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

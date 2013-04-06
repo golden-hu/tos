@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.21" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.2.v20100208 Build &lt;2.5.2.v20100210-0630></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">reports/dsFos.rptlibrary</property>
+            <property name="namespace">dsFos</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="F" id="43">
+            <property name="hidden">true</property>
+            <text-property name="promptText">date from</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">true</property>
+            <property name="dataType">date</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2008-01-01</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
+            <property name="controlType">text-box</property>
+            <property name="autoSuggestThreshold">1</property>
+            <structure name="format">
+                <property name="category">Long Date</property>
+                <property name="pattern">Long Date</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="T" id="44">
+            <property name="hidden">true</property>
+            <text-property name="promptText">date to</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">true</property>
+            <property name="dataType">date</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2040-12-31</value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="concealValue">false</property>
+            <property name="controlType">text-box</property>
+            <property name="autoSuggestThreshold">1</property>
+            <structure name="format">
+                <property name="category">Long Date</property>
+                <property name="pattern">Long Date</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="type" id="63">
+            <property name="hidden">true</property>
+            <text-property name="promptText">分组</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">0</value>
+            </simple-property-list>
+            <list-property name="selectionList">
+                <structure>
+                    <property name="value">0</property>
+                    <property name="label">业务性质</property>
+                </structure>
+                <structure>
+                    <property name="value">1</property>
+                    <property name="label">船公司</property>
+                </structure>
+                <structure>
+                    <property name="value">2</property>
+                    <property name="label">客户</property>
+                </structure>
+                <structure>
+                    <property name="value">3</property>
+                    <property name="label">业务员</property>
+                </structure>
+                <structure>
+                    <property name="value">4</property>
+                    <property name="label">航线</property>
+                </structure>
+            </list-property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="compCode" id="372" extends="dsFos.compCode"/>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dsFos" id="6"
+ extends="dsFos.dsFos"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsProfit" id="24">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">groupBy</property>
+                    <expression name="expression">var rt;&#13;
+if(params["type"].value == "1"){&#13;
+	rt = row["CONS_CARRIER_NAME"];&#13;
+}else if(params["type"].value == "2"){&#13;
+	rt = row["CUST_NAME"];&#13;
+}else if(params["type"].value == "3"){&#13;
+	rt = (row["CONS_SALES_REP_NAME"] == null ? "" : row["CONS_SALES_REP_NAME"]);&#13;
+}else if(params["type"].value == "4"){&#13;
+	rt = row["SHLI_CODE"];&#13;
+}&#13;
+rt;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">DSP_F</property>
+                    <property name="paramName">F</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">DSP_T</property>
+                    <property name="paramName">T</property>
+                    <property name="dataType">string</property>
+                    <property name="position">2</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">DP_compCode1</property>
+                    <property name="paramName">compCode</property>
+                    <property name="dataType">string</property>
+                    <property name="position">3</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+                <structure>
+                    <property name="name">DP_compCode2</property>
+                    <property name="paramName">compCode</property>
+                    <property name="dataType">string</property>
+                    <property name="position">4</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">CONS_CONTAINERS_TEU</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CONS_CARRIER_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">CUST_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">USER_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">SHLI_CODE</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">R</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">P</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">I</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">groupBy</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dsFos</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">ID</property>
+                    <property name="nativeName">ID</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">CONS_CONTAINERS_TEU</property>
+                    <property name="nativeName">CONS_CONTAINERS_TEU</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CONS_CARRIER_NAME</property>
+                    <property name="nativeName">CONS_CARRIER_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">CUST_NAME</property>
+                    <property name="nativeName">CUST_SNAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">CONS_SALES_REP_NAME</property>
+                    <property name="nativeName">CONS_SALES_REP_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">SHLI_CODE</property>
+                    <property name="nativeName">SHLI_CODE</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">R</property>
+                    <property name="nativeName">R</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">P</property>
+                    <property name="nativeName">P</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">I</property>
+                    <property name="nativeName">I</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+c.ID,
+c.CONS_CONTAINERS_TEU,
+c.CONS_CARRIER_NAME,
+c.CUST_NAME, 
+c.CONS_SALES_REP_NAME, 
+c.SHLI_CODE,
+sum(if(e.expe_type = 'R', 
+e.EXPE_TOTAL_AMOUNT * e.EXPE_EX_RATE, 0)) as R,
+sum(if(e.expe_type = 'R', 
+0, 1 * e.EXPE_TOTAL_AMOUNT * e.EXPE_EX_RATE)) as P,
+sum(if(e.expe_type = 'R', 
+e.EXPE_TOTAL_AMOUNT * e.EXPE_EX_RATE, 
+-1 * e.EXPE_TOTAL_AMOUNT * e.EXPE_EX_RATE)) as I
+from 
+S_EXPENSE e, F_CONSIGN c
+where e.CONS_ID = c.ID
+and c.CONS_BIZ_TYPE = 'M'
+and (c.CONS_SHIP_TYPE = 'FCL' || c.CONS_SHIP_TYPE = 'LCL')
+and c.CONS_DATE >= ?
+and c.CONS_DATE <= ?
+and e.REMOVED = 0
+and c.REMOVED = 0
+and c.COMP_CODE = ?
+and e.COMP_CODE = ?
+group by
+c.ID,
+c.CONS_CONTAINERS_TEU,
+c.CONS_CARRIER_NAME,
+c.CUST_NAME, 
+c.CONS_SALES_REP_NAME, 
+c.SHLI_CODE]]></xml-property>
+        </oda-data-set>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dsCompany" id="373">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">COMP_NAME_CN</property>
+                    <text-property name="displayName">COMP_NAME_CN</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">DP_compCode</property>
+                    <property name="paramName">compCode</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">COMP_NAME_CN</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">dsFos</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">COMP_NAME_CN</property>
+                    <property name="nativeName">COMP_NAME_CN</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select COMP_NAME_CN 
+from P_COMPANY
+where COMP_CODE = ?]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>COMP_NAME_CN</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>32</design:precision>
+            <design:scale>0</design:scale>
+            <design:nullability>NotNullable</design:nullability>
+            <design:uiHints>
+              <design:displayName>COMP_NAME_CN</design:displayName>
+            </design:uiHints>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>COMP_NAME_CN</design:label>
+            <design:formattingHints>
+              <design:displaySize>32</design:displaySize>
+            </design:formattingHints>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="cube" id="382">
+            <property name="dimensions">
+                <tabular-dimension name="GroupBy" id="383">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="384">
+                            <property name="levels">
+                                <tabular-level name="groupBy" id="385">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">groupBy</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="386">
+                    <property name="measures">
+                        <tabular-measure name="R" id="387">
+                            <expression name="measureExpression">dataSetRow["R"]</expression>
+                            <property name="dataType">decimal</property>
+                        </tabular-measure>
+                        <tabular-measure name="P" id="388">
+                            <expression name="measureExpression">dataSetRow["P"]</expression>
+                            <property name="dataType">decimal</property>
+                        </tabular-measure>
+                        <tabular-measure name="I" id="389">
+                            <expression name="measureExpression">dataSetRow["I"]</expression>
+                            <property name="dataType">decimal</property>
+                        </tabular-measure>
+                        <tabular-measure name="CONS_CONTAINERS_TEU" id="390">
+                            <expression name="measureExpression">dataSetRow["CONS_CONTAINERS_TEU"]</expression>
+                            <property name="dataType">integer</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">dsProfit</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="crosstab-cell" id="4">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <property name="topMargin">1in</property>
+            <property name="leftMargin">1.25in</property>
+            <property name="bottomMargin">1in</property>
+            <property name="rightMargin">1.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<H6>制表日期: <value-of>new Date()</value-of></H6>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="7">
+            <property name="width">100%</property>
+            <column id="8"/>
+            <column id="9"/>
+            <column id="10"/>
+            <row id="11">
+                <cell id="12">
+                    <table id="374">
+                        <property name="dataSet">dsCompany</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">COMP_NAME_CN</property>
+                                <expression name="expression">dataSetRow["COMP_NAME_CN"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <method name="onCreate"><![CDATA[vars["compName"] = this.getRowData().getColumnValue("COMP_NAME_CN");]]></method>
+                        <column id="381"/>
+                        <header>
+                            <row id="375">
+                                <cell id="376"/>
+                            </row>
+                        </header>
+                    </table>
+                </cell>
+                <cell id="13">
+                    <label id="23">
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">14pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingBottom">5pt</property>
+                        <property name="textAlign">center</property>
+                        <text-property name="text">集装箱单箱利润汇总表</text-property>
+                    </label>
+                </cell>
+                <cell id="14"/>
+            </row>
+            <row id="15">
+                <property name="fontFamily">sans-serif</property>
+                <property name="fontSize">10pt</property>
+                <cell id="16">
+                    <property name="colSpan">3</property>
+                    <property name="rowSpan">1</property>
+                    <property name="textAlign">center</property>
+                    <table id="25">
+                        <property name="width">210mm</property>
+                        <property name="dataSet">dsProfit</property>
+                        <column id="38"/>
+                        <column id="39"/>
+                        <column id="40"/>
+                        <header>
+                            <row id="26">
+                                <cell id="27">
+                                    <text-data id="42">
+                                        <property name="textAlign">left</property>
+                                        <expression name="valueExpr">"单位: " + vars["compName"]</expression>
+                                        <property name="contentType">html</property>
+                                    </text-data>
+                                </cell>
+                                <cell id="28">
+                                    <text-data id="45">
+                                        <property name="textAlign">center</property>
+                                        <expression name="valueExpr">"时间范围: " + params["F"].value + " ~ " + params["T"].value</expression>
+                                        <property name="contentType">html</property>
+                                    </text-data>
+                                </cell>
+                                <cell id="29">
+                                    <label id="136">
+                                        <property name="textAlign">right</property>
+                                        <text-property name="text">币种: CNY</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                    </table>
+                </cell>
+            </row>
+            <row id="19">
+                <cell id="20">
+                    <property name="colSpan">3</property>
+                    <property name="rowSpan">1</property>
+                    <property name="textAlign">center</property>
+                    <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="391">
+                        <property name="measures">
+                            <extended-item extensionName="MeasureView" id="398">
+                                <property name="measure">R</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="399">
+                                        <property name="aggregationOnRow">GroupBy/groupBy</property>
+                                        <property name="content">
+                                            <data id="400">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">R_GroupBy/groupBy</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="aggregations">
+                                    <extended-item extensionName="AggregationCell" id="419">
+                                        <property name="content">
+                                            <data id="420">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">R</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="401">
+                                        <property name="content">
+                                            <label id="402">
+                                                <text-property name="text">收入</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                           
+                            <extended-item extensionName="MeasureView" id="403">
+                                <property name="measure">P</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="404">
+                                        <property name="aggregationOnRow">GroupBy/groupBy</property>
+                                        <property name="content">
+                                            <data id="405">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">P_GroupBy/groupBy</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="aggregations">
+                                    <extended-item extensionName="AggregationCell" id="421">
+                                        <property name="content">
+                                            <data id="422">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">P</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="406">
+                                        <property name="content">
+                                            <label id="407">
+                                                <text-property name="text">支出</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                           
+                            <extended-item extensionName="MeasureView" id="408">
+                                <property name="measure">I</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="409">
+                                        <property name="aggregationOnRow">GroupBy/groupBy</property>
+                                        <property name="content">
+                                            <data id="410">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">I_GroupBy/groupBy</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="aggregations">
+                                    <extended-item extensionName="AggregationCell" id="423">
+                                        <property name="content">
+                                            <data id="424">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">I</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="411">
+                                        <property name="content">
+                                            <label id="412">
+                                                <text-property name="text">毛利</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                           
+                            <extended-item extensionName="MeasureView" id="413">
+                                <property name="measure">CONS_CONTAINERS_TEU</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="414">
+                                        <property name="aggregationOnRow">GroupBy/groupBy</property>
+                                        <property name="content">
+                                            <data id="415">
+                                                <structure name="numberFormat">
+                                                    <property name="category">General Number</property>
+                                                    <property name="pattern">General Number</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">CONS_CONTAINERS_TEU_GroupBy/groupBy</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="aggregations">
+                                    <extended-item extensionName="AggregationCell" id="425">
+                                        <property name="content">
+                                            <data id="426">
+                                                <structure name="numberFormat">
+                                                    <property name="category">General Number</property>
+                                                    <property name="pattern">General Number</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">CONS_CONTAINERS_TEU</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="416">
+                                        <property name="content">
+                                            <label id="417">
+                                                <text-property name="text">箱量</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                            <extended-item extensionName="ComputedMeasureView" name="I_per" id="446">
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="447">
+                                        <property name="aggregationOnRow">GroupBy/groupBy</property>
+                                        <property name="content">
+                                            <data name="I_per1" id="451">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">I_per</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="aggregations">
+                                    <extended-item extensionName="AggregationCell" id="448">
+                                        <property name="content">
+                                            <data id="452">
+                                                <structure name="numberFormat">
+                                                    <property name="category">Currency</property>
+                                                    <property name="pattern">###0.00</property>
+                                                </structure>
+                                                <property name="textAlign">right</property>
+                                                <property name="resultSetColumn">I_per_all</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="449">
+                                        <property name="content">
+                                            <label id="450">
+                                                <text-property name="text">单位箱量利润</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                        </property>
+                        <property name="rows">
+                            <extended-item extensionName="CrosstabView" id="393">
+                                <property name="grandTotal">
+                                    <extended-item extensionName="CrosstabCell" id="418">
+                                        <property name="content">
+                                            <label id="427">
+                                                <text-property name="text">总计</text-property>
+                                            </label>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="views">
+                                    <extended-item extensionName="DimensionView" id="394">
+                                        <property name="dimension">GroupBy</property>
+                                        <property name="levels">
+                                            <extended-item extensionName="LevelView" name="NewLevel View" id="395">
+                                                <property name="level">GroupBy/groupBy</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="396">
+                                                        <property name="content">
+                                                            <data name="groupBy" id="397">
+                                                                <property name="textAlign">left</property>
+                                                                <property name="resultSetColumn">groupBy</property>
+                                                            </data>
+                                                        </property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="grandTotalLocation">after</property>
+                            </extended-item>
+                        </property>
+                        <property name="header">
+                            <extended-item extensionName="CrosstabCell" id="392">
+                                <property name="content">
+                                    <data id="454">
+                                        <property name="resultSetColumn">groupName</property>
+                                    </data>
+                                </property>
+                            </extended-item>
+                        </property>
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">9pt</property>
+                        <property name="cube">cube</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">groupBy</property>
+                                <expression name="expression">dimension["GroupBy"]["groupBy"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">R_GroupBy/groupBy</property>
+                                <expression name="expression">measure["R"]</expression>
+                                <property name="dataType">decimal</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>GroupBy/groupBy</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">P_GroupBy/groupBy</property>
+                                <expression name="expression">measure["P"]</expression>
+                                <property name="dataType">decimal</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>GroupBy/groupBy</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">I_GroupBy/groupBy</property>
+                                <expression name="expression">measure["I"]</expression>
+                                <property name="dataType">decimal</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>GroupBy/groupBy</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONS_CONTAINERS_TEU_GroupBy/groupBy</property>
+                                <expression name="expression">measure["CONS_CONTAINERS_TEU"]</expression>
+                                <property name="dataType">integer</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>GroupBy/groupBy</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">R</property>
+                                <expression name="expression">measure["R"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">P</property>
+                                <expression name="expression">measure["P"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">I</property>
+                                <expression name="expression">measure["I"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONS_CONTAINERS_TEU</property>
+                                <expression name="expression">measure["CONS_CONTAINERS_TEU"]</expression>
+                                <property name="dataType">integer</property>
+                                <property name="aggregateFunction">SUM</property>
+                            </structure>
+                           
+                            <structure>
+                                <property name="name">I_per</property>
+                                <expression name="expression">data["CONS_CONTAINERS_TEU_GroupBy/groupBy"] == 0 || data["CONS_CONTAINERS_TEU_GroupBy/groupBy"] == null ? 0 : data["I_GroupBy/groupBy"]/data["CONS_CONTAINERS_TEU_GroupBy/groupBy"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">I_per_all</property>
+                                <expression name="expression" type="javascript">data["CONS_CONTAINERS_TEU"] == 0 || data["I"] == null ? 0 : data["I"]/data["CONS_CONTAINERS_TEU"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">groupName</property>
+                                <expression name="expression" type="javascript">var s;
+if(params["type"].value == "1"){
+	s = "承运人";
+}else if(params["type"].value == "2"){
+	s = "订舱客户";
+}else if(params["type"].value == "3"){
+	s = "业务员";
+}else if(params["type"].value == "4"){
+	s = "航线";
+}
+s;</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+    </body>
+    <property name="pageVariables">
+        <variable-element name="compName">
+            <property name="type">report</property>
+        </variable-element>
+    </property>
+</report>

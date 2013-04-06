@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+
+	<property name="log.base" value="${catalina.home}/logs/fosws" />
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>${log.base}.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${log.base}.log.%d{yyyy-MM-dd}</FileNamePattern>
+			<MaxHistory>30</MaxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%-30(%d{HH:mm:ss.SSS} [%thread]) %-5level %class{36}.%M:%L - %m%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.hibernate.SQL" level="DEBUG" />
+	<logger name="org.hibernate.type" level="DEBUG" />
+	<logger name="haitai" level="INFO" />
+
+	<root level="WARN">
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>

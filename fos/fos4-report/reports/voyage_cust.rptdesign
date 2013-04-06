@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.20" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.5.0.v20090603 Build &lt;2.5.0.v20090617-0630></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">reports/dsFos.rptlibrary</property>
+            <property name="namespace">dsFos</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="vessId" id="287">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaId" id="288">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaName" id="289">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaCarrier" id="290">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="shliId" id="291">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaShipDateF" id="292">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaShipDateT" id="293">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEta" id="294">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEtd" id="295">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaBerthingDate" id="296">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaSailDate" id="297">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="compCode" id="511" extends="dsFos.compCode"/>
+        <scalar-parameter name="vessName" id="512">
+            <property name="hidden">true</property>
+            <text-property name="promptText">英文船名</text-property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEtaF" id="513">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEtaT" id="514">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEtdF" id="515">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaEtdT" id="516">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaBerthingDateF" id="517">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaBerthingDateT" id="518">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaSailDateF" id="519">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="voyaSailDateT" id="520">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant"></value>
+            </simple-property-list>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dsFos" id="6"
+ extends="dsFos.dsFos"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="ds" id="7">
+            <list-property name="computedColumns">
+                <structure>
+                    <property name="name">VESS_VOYAGE</property>
+                    <expression name="expression">row["VESS_NAME"] + " " + row["VOYA_NAME"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">eta</property>
+                    <expression name="expression">(row["voya_eta"]==null?"":row["voya_eta"]) + " " + (row["VOYA_ETA_T"] ==null?"":row["VOYA_ETA_T"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">berthingDate</property>
+                    <expression name="expression">(row["voya_berthing_date"]==null?"":row["voya_berthing_date"]) + " " + (row["VOYA_BERTHING_DATE_T"] ==null?"":row["VOYA_BERTHING_DATE_T"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">etd</property>
+                    <expression name="expression">(row["voya_etd"]==null?"":row["voya_etd"]) + " " + (row["VOYA_ETD_T"] ==null?"":row["VOYA_ETD_T"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">sailDate</property>
+                    <expression name="expression">(row["voya_sail_date"]==null?"":row["voya_sail_date"]) + " " + (row["VOYA_SAIL_DATE_T"] ==null?"":row["VOYA_SAIL_DATE_T"])</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">pali_track_name</property>
+                    <expression name="expression">var tn;
+if(row["PALI_TRACK_TYPE"] == "1"){
+	tn = "车皮";
+}else if(row["PALI_TRACK_TYPE"] == "2"){
+	tn = "驳船";
+}else if(row["PALI_TRACK_TYPE"] == "3"){
+	tn = "卡车";
+}else if(row["PALI_TRACK_TYPE"] == "4"){
+	tn = "不做码头";
+}
+tn;</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData"/>
+            <method name="beforeOpen"><![CDATA[var sql = this.queryText;
+if(params["vessId"] != ""){
+	sql += " and v.VESS_ID = " + params["vessId"];
+}
+if(params["voyaId"] != ""){
+	sql += " and v.VOYA_ID = " + params["voyaId"];
+}
+if(params["voyaName"] != ""){
+	sql += " and v.VOYA_NAME = '" + params["voyaName"] + "'";
+}
+if(params["voyaCarrier"] != ""){
+	sql += " and v.VOYA_CARRIER = " + params["voyaCarrier"];
+}
+if(params["shliId"] != ""){
+	sql += " and v.SHLI_ID = " + params["shliId"];
+}
+if(params["voyaShipDateF"] != ""){
+	sql += " and v.VOYA_SHIP_DATE_F = '" + params["voyaShipDateF"] + "'";
+}
+if(params["voyaShipDateT"] != ""){
+	sql += " and v.VOYA_SHIP_DATE_T = '" + params["voyaShipDateT"] + "'";
+}
+if(params["voyaEta"] != ""){
+	sql += " and v.VOYA_ETA = '" + params["voyaEta"] + "'";
+}
+if(params["voyaEtd"] != ""){
+	sql += " and v.VOYA_ETD = '" + params["voyaEtd"] + "'";
+}
+if(params["voyaBerthingDate"] != ""){
+	sql += " and v.VOYA_BERTHING_DATE = '" + params["voyaBerthingDate"] + "'";
+}
+if(params["voyaSailDate"] != ""){
+	sql += " and v.VOYA_SAIL_DATE = '" + params["voyaSailDate"] + "'";
+}
+if(params["vessName"] != ""){
+	sql += " and v.VESS_NAME like '%" + params["vessName"] + "%'";
+}
+if(params["voyaEtaF"] != ""){
+	sql += " and v.VOYA_ETA >= '" + params["voyaEtaF"] + "'";
+}
+if(params["voyaEtaT"] != ""){
+	sql += " and v.VOYA_ETA <= '" + params["voyaEtaT"] + "'";
+}
+if(params["voyaEtdF"] != ""){
+	sql += " and v.VOYA_ETD >= '" + params["voyaEtdF"] + "'";
+}
+if(params["voyaEtdT"] != ""){
+	sql += " and v.VOYA_ETD <= '" + params["voyaEtdT"] + "'";
+}
+if(params["voyaBerthingDateF"] != ""){
+	sql += " and v.VOYA_BERTHING_DATE >= '" + params["voyaBerthingDateF"] + "'";
+}
+if(params["voyaBerthingDateT"] != ""){
+	sql += " and v.VOYA_BERTHING_DATE <= '" + params["voyaBerthingDateT"] + "'";
+}
+if(params["voyaSailDateF"] != ""){
+	sql += " and v.VOYA_SAIL_DATE >= '" + params["voyaSailDateF"] + "'";
+}
+if(params["voyaSailDateT"] != ""){
+	sql += " and v.VOYA_SAIL_DATE >= '" + params["voyaSailDateT"] + "'";
+}
+sql += " and v.COMP_CODE = '" + params["compCode"] + "'";
+sql += " and c.COMP_CODE = '" + params["compCode"] + "'";
+
+this.queryText = sql;]]></method>
+            <property name="dataSource">dsFos</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">VESS_NAME</property>
+                    <property name="nativeName">VESS_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">VESS_NAME_CN</property>
+                    <property name="nativeName">VESS_NAME_CN</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">VOYA_NAME</property>
+                    <property name="nativeName">VOYA_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">PALI_HARBOUR_NAME</property>
+                    <property name="nativeName">PALI_HARBOUR_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">voya_eta</property>
+                    <property name="nativeName">voya_eta</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">VOYA_ETA_T</property>
+                    <property name="nativeName">VOYA_ETA_T</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">voya_berthing_date</property>
+                    <property name="nativeName">voya_berthing_date</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">VOYA_BERTHING_DATE_T</property>
+                    <property name="nativeName">VOYA_BERTHING_DATE_T</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">voya_etd</property>
+                    <property name="nativeName">voya_etd</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">VOYA_ETD_T</property>
+                    <property name="nativeName">VOYA_ETD_T</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">voya_sail_date</property>
+                    <property name="nativeName">voya_sail_date</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">VOYA_SAIL_DATE_T</property>
+                    <property name="nativeName">VOYA_SAIL_DATE_T</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">CUST_SNAME_CN</property>
+                    <property name="nativeName">CUST_SNAME_CN</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">FCON_CONTRACT_NO</property>
+                    <property name="nativeName">FCON_CONTRACT_NO</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">CARG_NAME_CN</property>
+                    <property name="nativeName">CARG_NAME_CN</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">PALI_GROSS_WEIGHT</property>
+                    <property name="nativeName">PALI_GROSS_WEIGHT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">CONS_OPERATOR_NAME</property>
+                    <property name="nativeName">CONS_OPERATOR_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">VOYA_DISPATCHER_NAME</property>
+                    <property name="nativeName">VOYA_DISPATCHER_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">PALI_TRACK_TYPE</property>
+                    <property name="nativeName">PALI_TRACK_TYPE</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">VESS_VOYAGE</property>
+                    <property name="nativeName">VESS_VOYAGE</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">eta</property>
+                    <property name="nativeName">eta</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">berthingDate</property>
+                    <property name="nativeName">berthingDate</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">etd</property>
+                    <property name="nativeName">etd</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">sailDate</property>
+                    <property name="nativeName">sailDate</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">pali_track_name</property>
+                    <property name="nativeName">pali_track_name</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[SELECT l.vess_name, l.vess_name_cn, 
+l.voya_name, l.pali_harbour_name,
+date_format(v.voya_eta,"%c/%e") as voya_eta, 
+v.voya_eta_t, 
+date_format(v.voya_berthing_date,"%c/%e") as voya_berthing_date, 
+v.voya_berthing_date_t, 
+date_format(v.voya_etd,"%c/%e") as voya_etd,
+v.voya_etd_t,
+date_format(v.voya_sail_date,"%c/%e") as voya_sail_date,
+v.voya_sail_date_t,
+r.CUST_SNAME_CN, c.fcon_contract_no,
+c.carg_name_cn, l.pali_gross_weight,
+s.CONS_OPERATOR_NAME, v.voya_dispatcher_name,
+l.pali_track_type
+FROM F_CONTRACT c, 
+G_VOYAGE v, C_CUSTOMER r, F_PACKING_LIST l
+left join F_CONSIGN s
+on l.cons_id = s.cons_id
+WHERE l.fcon_id=c.fcon_id 
+and l.voya_id = v.voya_id
+and c.charter_id = r.cust_id
+and l.removed=0 
+and c.removed=0
+and (s.removed=0 or s.removed is null)]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="dc" id="298">
+            <property name="dimensions">
+                <tabular-dimension name="Group" id="299">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="300">
+                            <property name="levels">
+                                <tabular-level name="VESS_VOYAGE" id="314">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">VESS_VOYAGE</property>
+                                </tabular-level>
+                                <tabular-level name="VESS_NAME_CN" id="302">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">VESS_NAME_CN</property>
+                                </tabular-level>
+                                <tabular-level name="PALI_HARBOUR_NAME" id="303">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">PALI_HARBOUR_NAME</property>
+                                </tabular-level>
+                                <tabular-level name="eta" id="304">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">eta</property>
+                                </tabular-level>
+                                <tabular-level name="berthingDate" id="305">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">berthingDate</property>
+                                </tabular-level>
+                                <tabular-level name="etd" id="306">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">etd</property>
+                                </tabular-level>
+                                <tabular-level name="sailDate" id="307">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">sailDate</property>
+                                </tabular-level>
+                                <tabular-level name="CUST_SNAME_CN" id="308">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">CUST_SNAME_CN</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="309">
+                    <property name="measures">
+                        <tabular-measure name="CARG_NAME_CN" id="310">
+                            <property name="function">first</property>
+                            <expression name="measureExpression">dataSetRow["CARG_NAME_CN"]</expression>
+                            <property name="dataType">string</property>
+                        </tabular-measure>
+                        <tabular-measure name="PALI_GROSS_WEIGHT" id="311">
+                            <expression name="measureExpression">dataSetRow["PALI_GROSS_WEIGHT"]</expression>
+                            <property name="dataType">decimal</property>
+                        </tabular-measure>
+                        <tabular-measure name="CONS_OPERATOR_NAME" id="411">
+                            <property name="function">first</property>
+                            <expression name="measureExpression">dataSetRow["CONS_OPERATOR_NAME"]</expression>
+                            <property name="dataType">string</property>
+                        </tabular-measure>
+                        <tabular-measure name="VOYA_DISPATCHER_NAME" id="412">
+                            <property name="function">first</property>
+                            <expression name="measureExpression">dataSetRow["VOYA_DISPATCHER_NAME"]</expression>
+                            <property name="dataType">string</property>
+                        </tabular-measure>
+                        <tabular-measure name="pali_track_name" id="413">
+                            <property name="function">first</property>
+                            <expression name="measureExpression">dataSetRow["pali_track_name"]</expression>
+                            <property name="dataType">string</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">ds</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="crosstab" id="4">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <property name="topMargin">1in</property>
+            <property name="leftMargin">1.25in</property>
+            <property name="bottomMargin">1in</property>
+            <property name="rightMargin">1.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="textAlign">right</property>
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="281">
+            <property name="width">100%</property>
+            <column id="282"/>
+            <row id="283">
+                <cell id="284">
+                    <text id="164">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<H1><CENTER>船期发货表</CENTER></H1>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="285">
+                <cell id="286">
+                    <extended-item extensionName="Crosstab" extensionVersion="2.5.0" id="414">
+                        <property name="measures">
+                            <extended-item extensionName="MeasureView" id="442">
+                                <property name="measure">CARG_NAME_CN</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="443">
+                                        <property name="aggregationOnRow">Group/CUST_SNAME_CN</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="content">
+                                            <data id="444">
+                                                <property name="resultSetColumn">CARG_NAME_CN_Group/CUST_SNAME_CN</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="445">
+                                        <property name="content">
+                                            <label id="446">
+                                                <property name="fontWeight">bold</property>
+                                                <text-property name="text">品名</text-property>
+                                            </label>
+                                        </property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                            <extended-item extensionName="MeasureView" id="447">
+                                <property name="measure">PALI_GROSS_WEIGHT</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="448">
+                                        <property name="aggregationOnRow">Group/CUST_SNAME_CN</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="content">
+                                            <data id="449">
+                                                <property name="resultSetColumn">PALI_GROSS_WEIGHT_Group/CUST_SNAME_CN</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="450">
+                                        <property name="content">
+                                            <label id="451">
+                                                <property name="fontWeight">bold</property>
+                                                <text-property name="text">总吨位</text-property>
+                                            </label>
+                                        </property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                            <extended-item extensionName="MeasureView" id="452">
+                                <property name="measure">CONS_OPERATOR_NAME</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="453">
+                                        <property name="aggregationOnRow">Group/CUST_SNAME_CN</property>
+                                        <property name="content">
+                                            <data id="454">
+                                                <property name="borderBottomColor">#000000</property>
+                                                <property name="borderBottomStyle">solid</property>
+                                                <property name="borderBottomWidth">thin</property>
+                                                <property name="borderLeftColor">#000000</property>
+                                                <property name="borderLeftStyle">solid</property>
+                                                <property name="borderLeftWidth">thin</property>
+                                                <property name="borderRightColor">#000000</property>
+                                                <property name="borderRightStyle">solid</property>
+                                                <property name="borderRightWidth">thin</property>
+                                                <property name="borderTopColor">#000000</property>
+                                                <property name="borderTopStyle">solid</property>
+                                                <property name="borderTopWidth">thin</property>
+                                                <property name="resultSetColumn">CONS_OPERATOR_NAME_Group/CUST_SNAME_CN</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="455">
+                                        <property name="content">
+                                            <label id="456">
+                                                <property name="fontWeight">bold</property>
+                                                <text-property name="text">操作</text-property>
+                                            </label>
+                                        </property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                            <extended-item extensionName="MeasureView" id="457">
+                                <property name="measure">VOYA_DISPATCHER_NAME</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="458">
+                                        <property name="aggregationOnRow">Group/CUST_SNAME_CN</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="content">
+                                            <data id="459">
+                                                <property name="resultSetColumn">VOYA_DISPATCHER_NAME_Group/CUST_SNAME_CN</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="460">
+                                        <property name="content">
+                                            <label id="461">
+                                                <property name="fontWeight">bold</property>
+                                                <text-property name="text">调度</text-property>
+                                            </label>
+                                        </property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                            <extended-item extensionName="MeasureView" id="462">
+                                <property name="measure">pali_track_name</property>
+                                <property name="detail">
+                                    <extended-item extensionName="AggregationCell" id="463">
+                                        <property name="aggregationOnRow">Group/CUST_SNAME_CN</property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                        <property name="content">
+                                            <data id="464">
+                                                <property name="resultSetColumn">pali_track_name_Group/CUST_SNAME_CN</property>
+                                            </data>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                                <property name="header">
+                                    <extended-item extensionName="CrosstabCell" id="465">
+                                        <property name="content">
+                                            <label id="466">
+                                                <property name="fontWeight">bold</property>
+                                                <text-property name="text">进港方式</text-property>
+                                            </label>
+                                        </property>
+                                        <property name="borderTopStyle">solid</property>
+                                        <property name="borderTopWidth">thin</property>
+                                        <property name="borderTopColor">#000000</property>
+                                        <property name="borderLeftStyle">solid</property>
+                                        <property name="borderLeftWidth">thin</property>
+                                        <property name="borderLeftColor">#000000</property>
+                                        <property name="borderBottomStyle">solid</property>
+                                        <property name="borderBottomWidth">thin</property>
+                                        <property name="borderBottomColor">#000000</property>
+                                        <property name="borderRightStyle">solid</property>
+                                        <property name="borderRightWidth">thin</property>
+                                        <property name="borderRightColor">#000000</property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                        </property>
+                        <property name="rows">
+                            <extended-item extensionName="CrosstabView" id="416">
+                                <property name="views">
+                                    <extended-item extensionName="DimensionView" id="417">
+                                        <property name="dimension">Group</property>
+                                        <property name="levels">
+                                            <extended-item extensionName="LevelView" name="NewLevel View" id="418">
+                                                <property name="level">Group/VESS_VOYAGE</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="419">
+                                                        <property name="content">
+                                                            <data name="VESS_VOYAGE" id="420">
+                                                                <property name="fontWeight">bold</property>
+                                                                <property name="resultSetColumn">VESS_VOYAGE</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View1" id="421">
+                                                <property name="level">Group/VESS_NAME_CN</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="422">
+                                                        <property name="content">
+                                                            <data name="VESS_NAME_CN" id="423">
+                                                                <property name="fontWeight">bold</property>
+                                                                <property name="resultSetColumn">VESS_NAME_CN</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View2" id="424">
+                                                <property name="level">Group/PALI_HARBOUR_NAME</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="425">
+                                                        <property name="content">
+                                                            <data name="PALI_HARBOUR_NAME" id="426">
+                                                                <property name="fontWeight">bold</property>
+                                                                <property name="resultSetColumn">PALI_HARBOUR_NAME</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View3" id="427">
+                                                <property name="level">Group/eta</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="428">
+                                                        <property name="content">
+                                                            <data name="eta" id="429">
+                                                                <property name="resultSetColumn">eta</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View4" id="430">
+                                                <property name="level">Group/berthingDate</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="431">
+                                                        <property name="content">
+                                                            <data name="berthingDate" id="432">
+                                                                <property name="resultSetColumn">berthingDate</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View5" id="433">
+                                                <property name="level">Group/etd</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="434">
+                                                        <property name="content">
+                                                            <data name="etd" id="435">
+                                                                <property name="resultSetColumn">etd</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View6" id="436">
+                                                <property name="level">Group/sailDate</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="437">
+                                                        <property name="content">
+                                                            <data name="sailDate" id="438">
+                                                                <property name="resultSetColumn">sailDate</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                            <extended-item extensionName="LevelView" name="NewLevel View7" id="439">
+                                                <property name="level">Group/CUST_SNAME_CN</property>
+                                                <property name="member">
+                                                    <extended-item extensionName="CrosstabCell" id="440">
+                                                        <property name="content">
+                                                            <data name="CUST_SNAME_CN" id="441">
+                                                                <property name="resultSetColumn">CUST_SNAME_CN</property>
+                                                            </data>
+                                                        </property>
+                                                        <property name="borderTopStyle">solid</property>
+                                                        <property name="borderTopWidth">thin</property>
+                                                        <property name="borderTopColor">#000000</property>
+                                                        <property name="borderLeftStyle">solid</property>
+                                                        <property name="borderLeftWidth">thin</property>
+                                                        <property name="borderLeftColor">#000000</property>
+                                                        <property name="borderBottomStyle">solid</property>
+                                                        <property name="borderBottomWidth">thin</property>
+                                                        <property name="borderBottomColor">#000000</property>
+                                                        <property name="borderRightStyle">solid</property>
+                                                        <property name="borderRightWidth">thin</property>
+                                                        <property name="borderRightColor">#000000</property>
+                                                    </extended-item>
+                                                </property>
+                                            </extended-item>
+                                        </property>
+                                    </extended-item>
+                                </property>
+                            </extended-item>
+                        </property>
+                        <property name="header">
+                            <extended-item extensionName="CrosstabCell" id="415">
+                                <property name="content">
+                                    <table id="467">
+                                        <property name="fontWeight">bold</property>
+                                        <property name="width">100%</property>
+                                        <property name="dataSet">ds</property>
+                                        <list-property name="boundDataColumns">
+                                            <structure>
+                                                <property name="name">VESS_NAME</property>
+                                                <expression name="expression">dataSetRow["VESS_NAME"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VESS_NAME_CN</property>
+                                                <expression name="expression">dataSetRow["VESS_NAME_CN"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_NAME</property>
+                                                <expression name="expression">dataSetRow["VOYA_NAME"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">PALI_HARBOUR_NAME</property>
+                                                <expression name="expression">dataSetRow["PALI_HARBOUR_NAME"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">voya_eta</property>
+                                                <expression name="expression">dataSetRow["voya_eta"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_ETA_T</property>
+                                                <expression name="expression">dataSetRow["VOYA_ETA_T"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">voya_berthing_date</property>
+                                                <expression name="expression">dataSetRow["voya_berthing_date"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_BERTHING_DATE_T</property>
+                                                <expression name="expression">dataSetRow["VOYA_BERTHING_DATE_T"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">voya_etd</property>
+                                                <expression name="expression">dataSetRow["voya_etd"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_ETD_T</property>
+                                                <expression name="expression">dataSetRow["VOYA_ETD_T"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">voya_sail_date</property>
+                                                <expression name="expression">dataSetRow["voya_sail_date"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_SAIL_DATE_T</property>
+                                                <expression name="expression">dataSetRow["VOYA_SAIL_DATE_T"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">CUST_SNAME_CN</property>
+                                                <expression name="expression">dataSetRow["CUST_SNAME_CN"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">FCON_CONTRACT_NO</property>
+                                                <expression name="expression">dataSetRow["FCON_CONTRACT_NO"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">CARG_NAME_CN</property>
+                                                <expression name="expression">dataSetRow["CARG_NAME_CN"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">PALI_GROSS_WEIGHT</property>
+                                                <expression name="expression">dataSetRow["PALI_GROSS_WEIGHT"]</expression>
+                                                <property name="dataType">decimal</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">CONS_OPERATOR_NAME</property>
+                                                <expression name="expression">dataSetRow["CONS_OPERATOR_NAME"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VOYA_DISPATCHER_NAME</property>
+                                                <expression name="expression">dataSetRow["VOYA_DISPATCHER_NAME"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">PALI_TRACK_TYPE</property>
+                                                <expression name="expression">dataSetRow["PALI_TRACK_TYPE"]</expression>
+                                                <property name="dataType">integer</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">VESS_VOYAGE</property>
+                                                <expression name="expression">dataSetRow["VESS_VOYAGE"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">eta</property>
+                                                <expression name="expression">dataSetRow["eta"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">berthingDate</property>
+                                                <expression name="expression">dataSetRow["berthingDate"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">etd</property>
+                                                <expression name="expression">dataSetRow["etd"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">sailDate</property>
+                                                <expression name="expression">dataSetRow["sailDate"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                            <structure>
+                                                <property name="name">pali_track_name</property>
+                                                <expression name="expression">dataSetRow["pali_track_name"]</expression>
+                                                <property name="dataType">string</property>
+                                            </structure>
+                                        </list-property>
+                                        <column id="495"/>
+                                        <column id="496"/>
+                                        <column id="497"/>
+                                        <column id="498"/>
+                                        <column id="499"/>
+                                        <column id="500"/>
+                                        <column id="501"/>
+                                        <column id="502"/>
+                                        <header>
+                                            <row id="468">
+                                                <cell id="469">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="503">
+                                                        <text-property name="text">船名</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="470">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="504">
+                                                        <text-property name="text">中文船名</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="471">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="505">
+                                                        <text-property name="text">港区</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="472">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="506">
+                                                        <text-property name="text">预报靠船时间</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="473">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="507">
+                                                        <text-property name="text">实际靠船时间</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="474">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="508">
+                                                        <text-property name="text">预报开船时间</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="475">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="509">
+                                                        <text-property name="text">实际开船时间</text-property>
+                                                    </label>
+                                                </cell>
+                                                <cell id="476">
+                                                    <property name="borderBottomColor">#000000</property>
+                                                    <property name="borderBottomStyle">solid</property>
+                                                    <property name="borderBottomWidth">thin</property>
+                                                    <property name="borderLeftColor">#000000</property>
+                                                    <property name="borderLeftStyle">solid</property>
+                                                    <property name="borderLeftWidth">thin</property>
+                                                    <property name="borderRightColor">#000000</property>
+                                                    <property name="borderRightStyle">solid</property>
+                                                    <property name="borderRightWidth">thin</property>
+                                                    <property name="borderTopColor">#000000</property>
+                                                    <property name="borderTopStyle">solid</property>
+                                                    <property name="borderTopWidth">thin</property>
+                                                    <label id="510">
+                                                        <text-property name="text">客户</text-property>
+                                                    </label>
+                                                </cell>
+                                            </row>
+                                        </header>
+                                    </table>
+                                </property>
+                            </extended-item>
+                        </property>
+                        <property name="cube">dc</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">VESS_VOYAGE</property>
+                                <expression name="expression">dimension["Group"]["VESS_VOYAGE"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">VESS_NAME_CN</property>
+                                <expression name="expression">dimension["Group"]["VESS_NAME_CN"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PALI_HARBOUR_NAME</property>
+                                <expression name="expression">dimension["Group"]["PALI_HARBOUR_NAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">eta</property>
+                                <expression name="expression">dimension["Group"]["eta"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">berthingDate</property>
+                                <expression name="expression">dimension["Group"]["berthingDate"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">etd</property>
+                                <expression name="expression">dimension["Group"]["etd"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">sailDate</property>
+                                <expression name="expression">dimension["Group"]["sailDate"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CUST_SNAME_CN</property>
+                                <expression name="expression">dimension["Group"]["CUST_SNAME_CN"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CARG_NAME_CN_Group/CUST_SNAME_CN</property>
+                                <expression name="expression">measure["CARG_NAME_CN"]</expression>
+                                <property name="dataType">string</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>Group/CUST_SNAME_CN</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">first</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PALI_GROSS_WEIGHT_Group/CUST_SNAME_CN</property>
+                                <expression name="expression">measure["PALI_GROSS_WEIGHT"]</expression>
+                                <property name="dataType">decimal</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>Group/CUST_SNAME_CN</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">sum</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CONS_OPERATOR_NAME_Group/CUST_SNAME_CN</property>
+                                <expression name="expression">measure["CONS_OPERATOR_NAME"]</expression>
+                                <property name="dataType">string</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>Group/CUST_SNAME_CN</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">first</property>
+                            </structure>
+                            <structure>
+                                <property name="name">VOYA_DISPATCHER_NAME_Group/CUST_SNAME_CN</property>
+                                <expression name="expression">measure["VOYA_DISPATCHER_NAME"]</expression>
+                                <property name="dataType">string</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>Group/CUST_SNAME_CN</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">first</property>
+                            </structure>
+                            <structure>
+                                <property name="name">pali_track_name_Group/CUST_SNAME_CN</property>
+                                <expression name="expression">measure["pali_track_name"]</expression>
+                                <property name="dataType">string</property>
+                                <simple-property-list name="aggregateOn">
+                                    <value>Group/CUST_SNAME_CN</value>
+                                </simple-property-list>
+                                <property name="aggregateFunction">first</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

@@ -1,0 +1,1883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/first_report.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.firstreport</property>
+    <property name="layoutPreference">fixed layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="compCode" id="637">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="custName" id="893">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cargoName" id="894">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="owner" id="895">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="warehouseName" id="896">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="areaName" id="897">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="clkpBlock" id="898">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="account" id="899">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="storageDateStart" id="900">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="storageDateEnd" id="901">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="storageNoteNo" id="902">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="batchNo" id="903">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="entrustNo" id="904">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="orderNo" id="946">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="productNo" id="947">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cargoId" id="1014">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dsCargoOut" id="248">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">com.mysql.jdbc.Driver</property>
+            <property name="odaURL">jdbc:mysql://localhost:3306/fos4</property>
+            <property name="odaUser">fos</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">Zm9z</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dataSet" id="731">
+            <property name="nullsOrdering">nulls lowest</property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">SKU_NO</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">SKU_NO</text-property>
+                    <text-property name="heading">SKU_NO</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CARGO_ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">CARGO_ID</text-property>
+                    <text-property name="heading">CARGO_ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CARGO_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CARGO_NAME</text-property>
+                    <text-property name="heading">CARGO_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">unitName</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">unitName</text-property>
+                    <text-property name="heading">unitName</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">CATEGORY_NAME</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">CATEGORY_NAME</text-property>
+                    <text-property name="heading">CATEGORY_NAME</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">standardGrossWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">standardGrossWeight</text-property>
+                    <text-property name="heading">standardGrossWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">standardVolume</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">standardVolume</text-property>
+                    <text-property name="heading">standardVolume</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumInQuantity</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumInQuantity</text-property>
+                    <text-property name="heading">sumInQuantity</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumInPackages</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumInPackages</text-property>
+                    <text-property name="heading">sumInPackages</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumInGrossWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumInGrossWeight</text-property>
+                    <text-property name="heading">sumInGrossWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumInNetWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumInNetWeight</text-property>
+                    <text-property name="heading">sumInNetWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumInVolume</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumInVolume</text-property>
+                    <text-property name="heading">sumInVolume</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumOutQuantity</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumOutQuantity</text-property>
+                    <text-property name="heading">sumOutQuantity</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumOutPackages</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumOutPackages</text-property>
+                    <text-property name="heading">sumOutPackages</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumOutGrossWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumOutGrossWeight</text-property>
+                    <text-property name="heading">sumOutGrossWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumOutNetWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumOutNetWeight</text-property>
+                    <text-property name="heading">sumOutNetWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">sumOutVolume</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">sumOutVolume</text-property>
+                    <text-property name="heading">sumOutVolume</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">nowQuantity</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">nowQuantity</text-property>
+                    <text-property name="heading">nowQuantity</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">nowPackages</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">nowPackages</text-property>
+                    <text-property name="heading">nowPackages</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">nowGrossWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">nowGrossWeight</text-property>
+                    <text-property name="heading">nowGrossWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">nowNetWeight</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">nowNetWeight</text-property>
+                    <text-property name="heading">nowNetWeight</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">nowVolume</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="displayName">nowVolume</text-property>
+                    <text-property name="heading">nowVolume</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">productNo</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="displayName">productNo</text-property>
+                    <text-property name="heading">productNo</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">SKU_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">CARGO_ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">CARGO_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">unitName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">CATEGORY_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">standardGrossWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">standardVolume</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">sumInQuantity</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">sumInPackages</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">sumInGrossWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">sumInNetWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">sumInVolume</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">sumOutQuantity</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">sumOutPackages</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">sumOutGrossWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">sumOutNetWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">sumOutVolume</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">nowQuantity</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">nowPackages</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">nowGrossWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">nowNetWeight</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">nowVolume</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">productNo</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[var whereSql="";
+
+if (params['custName'].value!=null &amp;&amp; params['custName'].value!="")
+{
+	whereSql=whereSql+" and wsn.CUST_NAME="+"'"+params['custName'].value+"'";
+}
+if (params['cargoId'].value!=null &amp;&amp; params['cargoId'].value!="")
+{
+	whereSql=whereSql+" and wpc.CARGO_ID="+"'"+params['cargoId'].value+"'";
+}
+else{
+	if (params['cargoName'].value!=null &amp;&amp; params['cargoName'].value!="")
+	{
+		whereSql=whereSql+" and wpc.CARGO_NAME="+"'"+params['cargoName'].value+"'";
+	}
+}
+if (params['owner'].value!=null &amp;&amp; params['owner'].value!="")
+{
+	whereSql=whereSql+" and wsn.CARGO_OWNER_NAME="+"'"+params['owner'].value+"'";
+}
+if (params['warehouseName'].value!=null &amp;&amp; params['warehouseName'].value!="")
+{
+	whereSql=whereSql+" and wpc.WAREHOUSE_NAME="+"'"+params['warehouseName'].value+"'";
+}
+if (params['areaName'].value!=null &amp;&amp; params['areaName'].value!="")
+{
+	whereSql=whereSql+" and wpc.AREA_NAME="+"'"+params['areaName'].value+"'";
+}
+if (params['clkpBlock'].value!=null &amp;&amp; params['clkpBlock'].value!="")
+{
+	whereSql=whereSql+" and wpc.BLOCK_NAME="+"'"+params['clkpBlock'].value+"'";
+}
+if (params['account'].value!=null &amp;&amp; params['account'].value!="")
+{
+	whereSql=whereSql+" and wsn.ACCOUNT_NAME="+"'"+params['account'].value+"'";
+}
+if (params['storageDateStart'].value!=null &amp;&amp; params['storageDateStart'].value!="")
+{
+	whereSql=whereSql+" and wsn.STORAGE_DATE>="+"'"+params['storageDateStart'].value+"'";
+}
+if (params['storageDateEnd'].value!=null &amp;&amp; params['storageDateEnd'].value!="")
+{
+	whereSql=whereSql+" and wsn.STORAGE_DATE<="+"'"+params['storageDateEnd'].value+"'";
+}
+if (params['storageNoteNo'].value!=null &amp;&amp; params['storageNoteNo'].value!="")
+{
+	whereSql=whereSql+" and wsn.STORAGE_NOTE_NO="+"'"+params['storageNoteNo'].value+"'";
+}
+if (params['batchNo'].value!=null &amp;&amp; params['batchNo'].value!="")
+{
+	whereSql=whereSql+" and wsn.BATCH_NO like "+"%"+params['batchNo'].value+"%";
+}
+if (params['entrustNo'].value!=null &amp;&amp; params['entrustNo'].value!="")
+{
+	whereSql=whereSql+" and wsn.ENTRUST_NO like "+"%"+params['entrustNo'].value+"%";
+}
+
+if (params['orderNo'].value!=null &amp;&amp; params['orderNo'].value!="")
+{
+	whereSql=whereSql+" and wsn.ORDER_NO like "+"%"+params['orderNo'].value+"%";
+}
+
+if (params['productNo'].value!=null &amp;&amp; params['productNo'].value!="")
+{
+	whereSql=whereSql+" and wpc.PRODUCT_NO like "+"%"+params['productNo'].value+"%";
+}
+
+var sql="";
+sql+=" select "+
+	 "			t1.SKU_NO ,"+
+	 "          t1.CARGO_ID,"+
+     "          t1.CARGO_NAME,"+
+     "   		t1.unitName,"+
+     "    		t1.CATEGORY_NAME,"+		      
+	 "   		t1.standardGrossWeight,"+
+	 "	        t1.standardVolume,"+
+
+     "		    t1.quantity as sumInQuantity,"+
+   	 "		    t1.packages as sumInPackages,"+
+     "		    t1.grossWeight as sumInGrossWeight,"+
+     "		    t1.netWeight as sumInNetWeight,"+
+   	 "		    t1.volume as sumInVolume,"+
+
+     "          t2.pickedQuantity as sumOutQuantity,"+
+     "          t2.pickedPackages as sumOutPackages,"+
+     "          t2.pickedGrossWeight as sumOutGrossWeight,"+
+     "          t2.pickedNetWeight as sumOutNetWeight,"+
+     "          t2.pickedVolume as sumOutVolume,"+
+  
+     "          t1.quantity-t2.pickedQuantity as nowQuantity,"+
+     "          t1.packages-t2.pickedPackages as nowPackages,"+
+     "          t1.grossWeight-t2.pickedGrossWeight as nowGrossWeight,"+
+     "          t1.netWeight-t2.pickedNetWeight as nowNetWeight,"+
+     "          t1.volume-t2.pickedVolume as nowVolume,"+
+     
+     "          t1.productNo "+
+     "    from ( "+
+     "         select "+
+     "  			  wpc.SKU_NO,"+
+     "  			  wpc.CARGO_ID,"+
+     "  			  wpc.CARGO_NAME ,"+
+     "  			  sum(ifnull(wpc.QUANTITY,0)) as quantity ,"+
+     "			      sum(ifnull(wpc.PACKAGES,0)) as packages ,"+
+   "  			      sum(ifnull(wpc.GROSS_WEIGHT,0)) as grossWeight ,"+
+   "  			      sum(ifnull(wpc.NET_WEIGHT,0)) as netWeight ,"+
+   "  			      sum(ifnull(wpc.VOLUME,0)) as volume ,"+
+
+   "  			      wpc.UNIT_NAME as unitName,"+
+   "  			      wc.CATEGORY_NAME ,"+			      
+   "  			      wc.GROSS_WEIGHT as standardGrossWeight,"+
+   "  			      wc.VOLUME as standardVolume,"+
+
+   "                  wpc.product_no as productNo "+
+   "  			 from w_placed_cargo wpc "+
+   "  			 left join w_storage_note wsn"+
+   "               on wsn.ID=wpc.STORAGE_NOTE_ID "+			
+   "  			 left join w_cargo wc on wc.ID=wpc.CARGO_ID "+			  
+   "  		    where wpc.REMOVED=0 "+
+   "  			  and wsn.status=5 "+whereSql+
+   "		group by "+
+   "  			  wpc.SKU_NO,"+
+   "  			  wpc.CARGO_ID,"+
+   "  			  wpc.CARGO_NAME ,"+
+   "  			  unitName,"+
+   "  			  wc.CATEGORY_NAME ,"+			      
+   "  			  standardGrossWeight,"+
+   "  			  standardVolume,"+
+
+   "              productNo "+
+   "  			) as t1  "+
+   "      left join ("+
+   "           select wpc.sku_no,"+
+   "                  wpc.cargo_id,"+
+   "                  wpc.cargo_name,"+
+   "                  wpc.UNIT_NAME as unitName,"+
+   "         		  sum(ifnull(wpc.picked_quantity,0)) as pickedQuantity,"+
+   "         	      sum(ifnull(wpc.picked_packages,0)) as pickedPackages,"+
+   "         		  sum(ifnull(wpc.picked_gross_weight,0)) as pickedGrossWeight,"+
+   "         		  sum(ifnull(wpc.picked_net_weight,0)) as pickedNetWeight,"+
+   "        		  sum(ifnull(wpc.picked_volume,0)) as pickedVolume,"+
+
+   "  		  		  wc.CATEGORY_NAME ,	"+		      
+   "  		  		  wc.GROSS_WEIGHT as standardGrossWeight,"+
+   "  			  	  wc.VOLUME as standardVolume,"+
+
+   "                  wpc.product_no as productNo "+
+   "   		     from w_picked_cargo wpc"+
+   "             left join w_storage_note wsn on wsn.ID=wpc.out_STORAGE_NOTE_ID"+
+   "             left join w_cargo wc on wc.ID=wpc.CARGO_ID "+
+   "            where wpc.removed=0 and wsn.removed=0 and wsn.status=5 "+whereSql+
+   "		group by "+
+   "  			  wpc.SKU_NO,"+
+   "  			  wpc.CARGO_ID,"+
+   "  			  wpc.CARGO_NAME ,"+
+   "  			  unitName,"+
+   "  			  wc.CATEGORY_NAME ,"+			      
+   "  			  standardGrossWeight,"+
+   "  			  standardVolume,"+
+
+   "              productNo "+
+   "    	  ) as t2 "+
+   "  on t1.cargo_id=t2.cargo_id "+
+   "    where t1.productNo=t2.productNo "+
+   " order by t1.SKU_NO,t1.productNo asc "
+   
+   this.queryText=sql;
+
+]]></method>
+            <property name="dataSource">dsCargoOut</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">SKU_NO</property>
+                    <property name="nativeName">SKU_NO</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">CARGO_ID</property>
+                    <property name="nativeName">CARGO_ID</property>
+                    <property name="dataType">integer</property>
+                    <property name="nativeDataType">4</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">CARGO_NAME</property>
+                    <property name="nativeName">CARGO_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">unitName</property>
+                    <property name="nativeName">unitName</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">CATEGORY_NAME</property>
+                    <property name="nativeName">CATEGORY_NAME</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">standardGrossWeight</property>
+                    <property name="nativeName">standardGrossWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">standardVolume</property>
+                    <property name="nativeName">standardVolume</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">sumInQuantity</property>
+                    <property name="nativeName">sumInQuantity</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">sumInPackages</property>
+                    <property name="nativeName">sumInPackages</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">sumInGrossWeight</property>
+                    <property name="nativeName">sumInGrossWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">sumInNetWeight</property>
+                    <property name="nativeName">sumInNetWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">sumInVolume</property>
+                    <property name="nativeName">sumInVolume</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">sumOutQuantity</property>
+                    <property name="nativeName">sumOutQuantity</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">sumOutPackages</property>
+                    <property name="nativeName">sumOutPackages</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">sumOutGrossWeight</property>
+                    <property name="nativeName">sumOutGrossWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">sumOutNetWeight</property>
+                    <property name="nativeName">sumOutNetWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">sumOutVolume</property>
+                    <property name="nativeName">sumOutVolume</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">nowQuantity</property>
+                    <property name="nativeName">nowQuantity</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">nowPackages</property>
+                    <property name="nativeName">nowPackages</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">nowGrossWeight</property>
+                    <property name="nativeName">nowGrossWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">nowNetWeight</property>
+                    <property name="nativeName">nowNetWeight</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">nowVolume</property>
+                    <property name="nativeName">nowVolume</property>
+                    <property name="dataType">decimal</property>
+                    <property name="nativeDataType">3</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">productNo</property>
+                    <property name="nativeName">productNo</property>
+                    <property name="dataType">string</property>
+                    <property name="nativeDataType">12</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[ select 				
+	 			t1.SKU_NO ,
+	           t1.CARGO_ID,
+               t1.CARGO_NAME ,
+     
+        		t1.unitName,
+  	
+         		t1.CATEGORY_NAME ,			      
+	    		t1.standardGrossWeight,
+	 	        t1.standardVolume,
+	 	      
+     		    sum(ifnull(t1.quantity,0)) as sumInQuantity,
+   	 		    sum(ifnull(t1.packages,0)) as sumInPackages,
+     		    sum(ifnull(t1.grossWeight,0)) as sumInGrossWeight,
+     		    sum(ifnull(t1.netWeight,0)) as sumInNetWeight,
+   	 		    sum(ifnull(t1.volume,0)) as sumInVolume,
+	           
+               sum(ifnull(t2.pickedQuantity,0)) as sumOutQuantity,
+               sum(ifnull(t2.pickedPackages,0)) as sumOutPackages,
+               sum(ifnull(t2.pickedGrossWeight,0)) as sumOutGrossWeight,
+               sum(ifnull(t2.pickedNetWeight,0)) as sumOutNetWeight,
+               sum(ifnull(t2.pickedVolume,0)) as sumOutVolume,
+            
+               sum(ifnull(t1.quantity,0)-ifnull(t2.pickedQuantity,0)) as nowQuantity,
+               sum(ifnull(t1.packages,0)-ifnull(t2.pickedPackages,0)) as nowPackages,
+               sum(ifnull(t1.grossWeight,0)-ifnull(t2.pickedGrossWeight,0)) as nowGrossWeight,
+               sum(ifnull(t1.netWeight,0)-ifnull(t2.pickedNetWeight,0)) as nowNetWeight,
+               sum(ifnull(t1.volume,0)-ifnull(t2.pickedVolume,0)) as nowVolume,
+            
+               t1.productNo 
+         from (
+
+              select
+       			  wpc.SKU_NO ,
+       			  wpc.CARGO_ID,
+       			  wpc.CARGO_NAME ,
+       			  wpc.QUANTITY as quantity ,
+     			      wpc.PACKAGES as packages ,
+     			      wpc.GROSS_WEIGHT as grossWeight ,
+     			      wpc.NET_WEIGHT as netWeight ,
+     			      wpc.VOLUME as volume ,
+     			      wpc.MEASURE as measure ,	
+		      
+     			      wpc.UNIT_NAME as unitName,
+     			      wpc.P_UNIT_NAME as pUnitName,
+     			      wpc.W_UNIT_NAME as wUnitName ,
+     			      wpc.V_UNIT_NAME as vUnitName ,
+     			      wpc.M_UNIT_NAME as mUnitName,	
+                     0 as pickedQuantity,
+                     0 as pickedPackages,
+                     0 as pickedGrossWeight,
+                     0 as pickedNetWeight,
+                     0 as pickedVolume,
+                     0 as pickedMeasure,	      
+     			      wsn.CARGO_OWNER_NAME ,			      
+     			      wc.CATEGORY_NAME ,			      
+     			      wc.GROSS_WEIGHT as standardGrossWeight,
+     			      wc.VOLUME as standardVolume,
+     			     
+                     wpc.placed_date as actTime ,
+                     wpc.product_no as productNo 
+     			 from w_placed_cargo wpc 
+     			 left join w_storage_note wsn
+                  on wsn.ID=wpc.STORAGE_NOTE_ID 			
+     			 left join w_cargo wc on wc.ID=wpc.CARGO_ID 			  
+     		    where wpc.REMOVED=0 
+     			  and wsn.status=5 
+     			) as t1  
+              left join 
+              ( 
+              select wpc.sku_no,
+                     wpc.cargo_id,
+                     wpc.cargo_name,
+                     0 as quantity,
+                     0 as packages,
+                     0 as gross_weight,
+                     0 as net_weight,
+                     0 as volume,
+                    
+                     wpc.UNIT_NAME as unitName,
+                     wpc.P_UNIT_NAME as pUnitName,
+     			      wpc.W_UNIT_NAME as wUnitName ,
+     			      wpc.V_UNIT_NAME as vUnitName ,
+     			      wpc.M_UNIT_NAME as mUnitName,
+            		  wpc.picked_quantity as pickedQuantity,
+            	      wpc.picked_packages as pickedPackages,
+            		  wpc.picked_gross_weight as pickedGrossWeight,
+            		  wpc.picked_net_weight as pickedNetWeight,
+           		  wpc.picked_volume as pickedVolume,
+            		 
+            		  wsn.CARGO_OWNER_NAME ,			      
+     		  		  wc.CATEGORY_NAME ,			      
+     		  		  wc.GROSS_WEIGHT as standardGrossWeight,
+     			  	  wc.VOLUME as standardVolume,
+     			  	  
+           		  wpc.picked_date as actTime ,
+                     wpc.product_no as productNo 
+      		     from w_picked_cargo wpc
+                left join w_storage_note wsn on wsn.ID=wpc.out_STORAGE_NOTE_ID
+                left join w_cargo wc on wc.ID=wpc.CARGO_ID 
+               where wpc.removed=0 and wsn.removed=0 and wsn.status=5 
+       	  ) as t2 
+     on t1.cargo_id=t2.cargo_id 
+       where t1.productNo=t2.productNo 
+     group by 
+             t1.SKU_NO ,
+     	      t1.CARGO_ID,
+     		  t1.CARGO_NAME ,
+     		  t1.unitName,
+ 
+     		  t1.CATEGORY_NAME , 		      
+     		  t1.standardGrossWeight,
+     	      t1.standardVolume,
+     		
+             t1.productNo 	]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="110">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="246">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="247">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="table_header_row" id="504">
+            <property name="backgroundColor">#FFFF80</property>
+        </style>
+        <style name="NewStyle" id="629">
+            <property name="backgroundColor">#DDFFFF</property>
+        </style>
+        <style name="NewStyle1" id="736">
+            <property name="fontSize">13pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="height">400mm</property>
+            <property name="width">650mm</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="905">
+            <property name="height">1.3194444444444444in</property>
+            <property name="width">22.875in</property>
+            <column id="906">
+                <property name="width">22.875in</property>
+            </column>
+            <row id="907">
+                <property name="height">0.6666666666666666in</property>
+                <cell id="908">
+                    <label id="12">
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">18pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="textUnderline">none</property>
+                        <property name="textAlign">center</property>
+                        <text-property name="text">库存汇总报表</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="909">
+                <cell id="910">
+                    <table id="163">
+                        <property name="width">13.958333333333334in</property>
+                        <property name="dataSet">dataSet</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Column Binding</property>
+                                <text-property name="displayName">SKU_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SKU_NO"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_1</property>
+                                <text-property name="displayName">CARGO_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CARGO_NAME"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_2</property>
+                                <text-property name="displayName">CATEGORY_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CATEGORY_NAME"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_3</property>
+                                <text-property name="displayName">PRODUCTNO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["productNo"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_4</property>
+                                <text-property name="displayName">UNITNAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["unitName"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_5</property>
+                                <text-property name="displayName">SUMINQUANTITY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumInQuantity"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_6</property>
+                                <text-property name="displayName">SUMOUTQUANTITY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumOutQuantity"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_7</property>
+                                <text-property name="displayName">NOWQUANTITY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["nowQuantity"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                          
+                            <structure>
+                                <property name="name">Column Binding_9</property>
+                                <text-property name="displayName">STANDARDVOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["standardVolume"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_10</property>
+                                <text-property name="displayName">STANDARDGROSSWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["standardGrossWeight"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Aggregation</property>
+                                <text-property name="displayName">SUMINPACKAGES</text-property>
+                                <property name="dataType">float</property>
+                                <property name="aggregateFunction">AVE</property>
+                                <list-property name="arguments">
+                                    <structure>
+                                        <property name="name">Expression</property>
+                                        <expression name="value" type="javascript">dataSetRow["sumInPackages"]</expression>
+                                    </structure>
+                                </list-property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_11</property>
+                                <text-property name="displayName">SUMINPACKAGES</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumInPackages"]</expression>
+                                <property name="dataType">float</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_12</property>
+                                <text-property name="displayName">SUMINVOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumInVolume"]&lt;=0?dataSetRow["sumInPackages"]*dataSetRow["standardVolume"]:dataSetRow["sumInVolume"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                          
+                            <structure>
+                                <property name="name">Column Binding_14</property>
+                                <text-property name="displayName">SUMINGROSSWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumInGrossWeight"]&lt;=0?dataSetRow["sumInQuantity"]*dataSetRow["standardGrossWeight"]:dataSetRow["sumInGrossWeight"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_15</property>
+                                <text-property name="displayName">SUMINNETWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumInNetWeight"]&lt;=0?dataSetRow["sumInQuantity"]*dataSetRow["standardGrossWeight"]:dataSetRow["sumInNetWeight"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_16</property>
+                                <text-property name="displayName">SUMOUTVOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumOutVolume"]&lt;=0?dataSetRow["sumOutQuantity"]*dataSetRow["standardVolume"]:dataSetRow["sumOutVolume"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_17</property>
+                                <text-property name="displayName">SUMOUTGROSSWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["sumOutGrossWeight"]&lt;=0?dataSetRow["sumOutQuantity"]*dataSetRow["standardGrossWeight"]:dataSetRow["sumOutGrossWeight"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_18</property>
+                                <text-property name="displayName">NOWVOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["nowVolume"]&lt;=0?dataSetRow["nowQuantity"]*dataSetRow["standardVolume"]:dataSetRow["nowVolume"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Column Binding_19</property>
+                                <text-property name="displayName">NOWGROSSWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["nowGrossWeight"]&lt;=0?dataSetRow["nowQuantity"]*dataSetRow["standardGrossWeight"]:dataSetRow["nowGrossWeight"]</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">50</property>
+                        <column id="265">
+                            <property name="width">1.2083333333333333in</property>
+                        </column>
+                        <column id="273">
+                            <property name="width">1.5833333333333333in</property>
+                        </column>
+                        <column id="765">
+                            <property name="width">1.4583333333333333in</property>
+                        </column>
+                        <column id="950">
+                            <property name="width">0.9583333333333334in</property>
+                        </column>
+                        <column id="328">
+                            <property name="width">0.875in</property>
+                        </column>
+                        <column id="843">
+                            <property name="width">0.9583333333333334in</property>
+                        </column>
+                        <column id="955">
+                            <property name="width">0.9583333333333334in</property>
+                        </column>
+                        <column id="837">
+                            <property name="width">0.9722222222222222in</property>
+                            <property name="repeat">1</property>
+                        </column>
+                        <column id="831">
+                            <property name="width">0.7638888888888888in</property>
+                        </column>
+                        <column id="965">
+                            <property name="width">0.7638888888888888in</property>
+                        </column>
+                        <column id="913">
+                            <property name="width">0.875in</property>
+                        </column>
+                        <column id="916">
+                            <property name="width">0.75in</property>
+                        </column>
+                        <column id="921">
+                            <property name="width">0.9305555555555556in</property>
+                        </column>
+                        <column id="925">
+                            <property name="width">1.0277777777777777in</property>
+                        </column>
+                        <column id="933">
+                            <property name="width">0.8194444444444444in</property>
+                        </column>
+                        <column id="929">
+                            <property name="width">0.7777777777777778in</property>
+                        </column>
+                        <column id="989">
+                            <property name="width">0.7777777777777778in</property>
+                        </column>
+                        <column id="992">
+                            <property name="width">0.7777777777777778in</property>
+                        </column>
+                        <header>
+                            <row id="164">
+                                <property name="height">0.28125in</property>
+                                <property name="borderBottomColor">#000000</property>
+                                <property name="borderBottomStyle">dotted</property>
+                                <cell id="262">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="280">
+                                        <property name="style">NewStyle</property>
+                                        <property name="backgroundColor">aqua</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="color">black</property>
+                                        <text-property name="text">物料代码</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="270">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="284">
+                                        <property name="style">NewStyle</property>
+                                        <property name="backgroundColor">aqua</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料描述</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="763">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="766">
+                                        <property name="style">NewStyle</property>
+                                        <property name="backgroundColor">aqua</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料组</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="948">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="951">
+                                        <property name="style">NewStyle</property>
+                                        <property name="backgroundColor">aqua</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">生产批号</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="325">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="330">
+                                        <property name="style">NewStyle</property>
+                                        <property name="backgroundColor">aqua</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">数量单位</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="841">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="853">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">入库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="953">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="956">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">入库件数</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="835">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="855">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">入库体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="829">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="857">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">入库毛量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="963">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="966">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">入库净量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="911">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="917">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">出库数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="914">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="918">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">出库体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="919">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="922">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">出库重量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="923">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="926">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">库存数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="931">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="934">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">库存体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="927">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="930">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">库存重量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="987">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="994">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">单位体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="990">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <label id="995">
+                                        <property name="backgroundColor">aqua</property>
+                                        <text-property name="text">单位重量</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <detail>
+                            <row id="173">
+                                <cell id="263">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="873">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">Column Binding</property>
+                                    </data>
+                                </cell>
+                                <cell id="271">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="874">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">Column Binding_1</property>
+                                    </data>
+                                </cell>
+                                <cell id="764">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="875">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">Column Binding_2</property>
+                                    </data>
+                                </cell>
+                                <cell id="949">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="952">
+                                        <property name="resultSetColumn">Column Binding_3</property>
+                                    </data>
+                                </cell>
+                                <cell id="326">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="945">
+                                        <property name="resultSetColumn">Column Binding_4</property>
+                                    </data>
+                                </cell>
+                                <cell id="842">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="936">
+                                        <property name="resultSetColumn">Column Binding_5</property>
+                                    </data>
+                                </cell>
+                                <cell id="954">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1005">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">###0{RoundingMode=UP}</property>
+                                        </structure>
+                                        <property name="resultSetColumn">Column Binding_11</property>
+                                    </data>
+                                </cell>
+                                <cell id="836">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1006">
+                                        <property name="resultSetColumn">Column Binding_12</property>
+                                    </data>
+                                </cell>
+                                <cell id="830">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1008">
+                                        <property name="resultSetColumn">Column Binding_14</property>
+                                    </data>
+                                </cell>
+                                <cell id="964">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1009">
+                                        <property name="resultSetColumn">Column Binding_15</property>
+                                    </data>
+                                </cell>
+                                <cell id="912">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="939">
+                                        <property name="resultSetColumn">Column Binding_6</property>
+                                    </data>
+                                </cell>
+                                <cell id="915">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1010">
+                                        <property name="resultSetColumn">Column Binding_16</property>
+                                    </data>
+                                </cell>
+                                <cell id="920">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1011">
+                                        <property name="resultSetColumn">Column Binding_17</property>
+                                    </data>
+                                </cell>
+                                <cell id="924">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="942">
+                                        <property name="resultSetColumn">Column Binding_7</property>
+                                    </data>
+                                </cell>
+                                <cell id="932">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1012">
+                                        <property name="resultSetColumn">Column Binding_18</property>
+                                    </data>
+                                </cell>
+                                <cell id="928">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1013">
+                                        <property name="resultSetColumn">Column Binding_19</property>
+                                    </data>
+                                </cell>
+                                <cell id="988">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1002">
+                                        <property name="resultSetColumn">Column Binding_9</property>
+                                    </data>
+                                </cell>
+                                <cell id="991">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">1px</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">1px</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">1px</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">1px</property>
+                                    <data id="1003">
+                                        <property name="resultSetColumn">Column Binding_10</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

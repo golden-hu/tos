@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>上海海钛软件科技有限公司 -- 专业物流软件提供商</title>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+		<meta name="keywords" content="海钛软件,物流软件,货代软件,仓储软件，运输管理软件，TMS,WMS,SCM">
+        <meta name="description" content="上海海钛软件科技专注物流供应链领域的信息系统解决方案，是国内领先的物流软件提供商。">
+        
+		<link rel="stylesheet" type="text/css" href="tms-reg_files/ext-all.css" />
+		<link rel="stylesheet" href="tms-reg_files/reset.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="tms-reg_files/style.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="tms-reg_files/layout.css" type="text/css" media="screen">  
+		<link rel="stylesheet" href="tms-reg_files/cmxform.css" type="text/css" media="screen">   
+		<link rel="stylesheet" href="tms-reg_files/cmxformTemplate.css" type="text/css" media="screen">		
+		<script src="tms-reg_files/jquery-1.js" type="text/javascript"></script>
+		<script src="tms-reg_files/jquery.js" type="text/javascript"></script>
+		<script src="tms-reg_files/jquery_002.js" type="text/javascript"></script>
+		<script type="text/javascript">
+	jQuery(function() {
+		// show a simple loading indicator
+		var loader = jQuery('<div id="loader"><img src="images/loading.gif" alt="loading..." /></div>')
+			.css({position: "relative", top: "1em", left: "25em"})
+			.appendTo("body")
+			.hide();
+		jQuery().ajaxStart(function() {
+			loader.show();
+		}).ajaxStop(function() {
+			loader.hide();
+		}).ajaxError(function(a, b, e) {
+			throw e;
+		});
+		var v = jQuery("#form").validate({
+			event:"blur",
+			rules:{
+				username:{required:true,minlength:3},
+				passwd:{required:true,minlength:4,maxlength:16}
+			},
+			messages:{
+				username:{
+					required:"请输入用户名",
+					minlength:"用户名不能少于3个字",
+					remote:"该用户名已经存在"},
+				passwd:{
+					required:"请输入密码",
+					minlength:"密码长度不能少于4个字",
+					maxlength:"密码长度不能多于16个字"}
+			},
+		  	focusInvalid:false,
+		  	onkeyup:false
+		});	
+
+		jQuery("#reset").click(function() {
+			v.resetForm();
+		});
+	});
+</script>
+<style type="text/css">
+
+form {
+	border: 2px #ccc solid;
+	padding: 10px
+}
+
+</style>
+</head>
+
+<script type="text/javascript" src="tms-reg_files/ext2.js"></script>
+<script type="text/javascript" src="tms-reg_files/constant.js"></script>
+
+<body id="page7">
+<!--==============================header=================================-->
+		<div class="header">
+			<div class="main">
+				<div class="wrapper">
+					<h1>
+						<a href="http://www.hitisoft.com/index.html">海钛软件</a>
+						<strong>Hitisoft Technology</strong>
+					</h1>
+					<nav>
+						<ul class="menu">
+							<li><a href="http://www.hitisoft.com/index.html">首页</a></li>
+							<li><a href="http://www.hitisoft.com/products.html">产品</a></li>
+							<li><a href="http://www.hitisoft.com/service.html">服务</a></li>
+							<li><a href="http://www.hitisoft.com/fos.html"><font color="#F92">免费试用</font></a></li>
+							<li><a href="http://www.hitisoft.com/about.html">关于海钛</a></li>
+							<li><a href="http://www.hitisoft.com/contacts.html">联系我们</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+<!--==============================content================================-->
+		<div id="content">
+			<div class="main">
+				<div class="indent-left">
+					<div class="wrapper">						
+						<div class="col-2">
+							<div class="p1">
+								<p><img src="tms-reg_files/truck.jpg" alt="TMS" align="left" border="0"> 
+								</p><h2>欢迎使用 TMS </h2>								
+								<div class="clear"></div>
+							</div>
+							<div class="p1" id="main">
+							
+								<form method="post" class="cmxform" id="form" action="javascript:login(f);" name="f">
+								<fieldset>
+									<p>
+										<label for="username">用户名*</label>
+										<input id="username" name="username" size="35">
+									</p>
+									<p>
+										<label for="passwd">密&nbsp;&nbsp;&nbsp;码*</label>
+										<input id="passwd" name="passwd"  size="35.5" type="password" onkeypress="javascript:if (event.keyCode == 13) login(f);return" >
+									</p>
+									<p>
+										<input class="submit" value="登录" type="submit" id="submit">&nbsp;&nbsp;
+										<input class="reset" value="重置" type="reset">
+									</p>
+								</fieldset>
+								</form>
+								
+							</div>		
+                           	<br><div id="result"></div>	
+						</div>						
+						<div class="col-5">
+							<div class="box1">
+							<h4 class="active"><center>注意事项</center></h4>
+							<p>
+							公司英文简码, 用来生成单据的流水号, 如HTS, 生成单据号HTS10X0008
+							</p>
+							<p>
+							联系电话可填手机和电话，电话请加上区号，例如：021-34250032
+							</p>
+							<p>
+							错误邮件地址将导致您无法收到帐号激活邮件，从而无法成功完成注册。请填并检查邮件地址，以保证准确。
+							</p>
+							<p>
+							QQ和MSN必留一项正确的，方便客服人员与您沟通。 
+							</p>
+							<p>用户登录名，请使用电子邮箱注册！ </p>
+						</div>
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<div class="footer">
+			上海海钛软件科技有限公司 © 2011 沪ICP备09049082号 <br>
+			上海市宁国路228号803
+		</div>
+	
+
+<div style="position: relative; top: 1em; left: 25em; display: none;" id="loader"><img src="tms-reg_files/loading.gif" alt="loading..."></div></body></html>
+
+<script type="text/javascript">document.f.username.focus();</script>

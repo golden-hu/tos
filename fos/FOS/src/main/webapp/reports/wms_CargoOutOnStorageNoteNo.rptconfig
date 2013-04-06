@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <list-property name="configVars">
+        <structure>
+            <property name="name">__isdisplay__id_636_0</property>
+            <property name="value">7055</property>
+        </structure>
+        <structure>
+            <property name="name">__isdisplay__compCode_637_1</property>
+            <property name="value">BSD</property>
+        </structure>
+        <structure>
+            <property name="name">id_636_2</property>
+            <property name="value">7055</property>
+        </structure>
+        <structure>
+            <property name="name">id_636_type_</property>
+            <property name="value">string</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_637_3</property>
+            <property name="value">BSD</property>
+        </structure>
+        <structure>
+            <property name="name">compCode_637_type_</property>
+            <property name="value">string</property>
+        </structure>
+    </list-property>
+</report>

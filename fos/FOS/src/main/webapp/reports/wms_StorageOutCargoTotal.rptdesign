@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.22" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20120213 Build &lt;3.7.2.v20120214-1408></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/first_report.gif</property>
+    <property name="cheatSheet">org.eclipse.birt.report.designer.ui.cheatsheet.firstreport</property>
+    <property name="layoutPreference">fixed layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="pDate" id="349">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="compCode" id="351">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pDateEnd" id="506">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cargoOwenrName" id="619">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cargoType" id="620">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="storageClass" id="621">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="cargoName" id="622">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="storageDate" id="748">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="custName" id="749">
+            <property name="valueType">static</property>
+            <property name="isRequired">false</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.birt.report.data.oda.jdbc" name="dsCargoOut" id="248">
+            <list-property name="privateDriverProperties">
+                <ex-property>
+                    <name>metadataBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledMetadataBidiFormatStr</name>
+                </ex-property>
+                <ex-property>
+                    <name>contentBidiFormatStr</name>
+                    <value>ILYNN</value>
+                </ex-property>
+                <ex-property>
+                    <name>disabledContentBidiFormatStr</name>
+                </ex-property>
+            </list-property>
+            <property name="odaDriverClass">com.mysql.jdbc.Driver</property>
+            <property name="odaURL">jdbc:mysql://localhost/fos4</property>
+            <property name="odaUser">fos</property>
+            <encrypted-property name="odaPassword" encryptionID="base64">Zm9z</encrypted-property>
+        </oda-data-source>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet" name="dataCargoOut" id="249">
+            <list-property name="parameters">
+                <structure>
+                    <property name="name">pdCompCode</property>
+                    <property name="paramName">compCode</property>
+                    <property name="dataType">string</property>
+                    <property name="position">1</property>
+                    <property name="isInput">true</property>
+                    <property name="isOutput">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">PICKED_DATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">PRODUCT_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">VOLUME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">GROSS_WEIGHT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">CATEGORY_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">SUM_PICKED_VOLUME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">SUM_PICKED_GROSSWEIGHT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">CARGO_OWNER_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">PRODUCT_DATE</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">SKU_NO</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">CARGO_NAME</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">SUM_PICKED_QUANTITY</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">PICKED_MEASUREMENT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">PICKED_GROSS_WEIGHT</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">PICKED_VOLUME</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">ACTION_GATEGORY</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[if(params['storageDate'].value!=null &amp;&amp; params['storageDate'].value!=''){
+	if(params['storageDate'].value='出货日期'){
+		if (params['pDate'].value!=null)
+		{
+			this.queryText=this.queryText+" and wsn.ACTURE_TIME>="+"'"+params['pDate'].value+"'";
+		}
+		if (params['pDateEnd'].value!=null)
+		{
+			this.queryText=this.queryText+" and wsn.ACTURE_TIME<="+"'"+params['pDateEnd'].value+"'";
+		}
+	}
+	if(params['storageDate'].value='接单日期'){
+		if (params['pDate'].value!=null)
+		{
+			this.queryText=this.queryText+" and wsn.STORAGE_DATE>="+"'"+params['pDate'].value+"'";
+		}
+		if (params['pDateEnd'].value!=null)
+		{
+			this.queryText=this.queryText+" and wsn.STORAGE_DATE<="+"'"+params['pDateEnd'].value+"'";
+		}
+	}
+}
+if (params["cargoOwenrName"].value!=null &amp;&amp; params["cargoOwenrName"].value!="")
+{
+	this.queryText=this.queryText+" and wsn.CARGO_OWNER_NAME like "+"'%"+params["cargoOwenrName"].value+"%'";
+}
+
+if (params['cargoType'].value!=null  &amp;&amp;  params['cargoType'].value!=null)
+{
+	this.queryText=this.queryText+" and wc.CATEGORY_NAME="+"'"+params['cargoType'].value+"'";
+}
+
+if (params['storageClass'].value!=null &amp;&amp; params['storageClass'].value!="")
+{
+	this.queryText=this.queryText+" and wsn.STORAGE_CLASS="+"'"+params['storageClass'].value+"'";
+}
+
+if (params['cargoName'].value!=null &amp;&amp; params['cargoName'].value!="")
+{
+	this.queryText=this.queryText+" and pkc.CARGO_NAME="+"'"+params['cargoName'].value+"'";
+}
+if (params['custName'].value!=null &amp;&amp; params['custName'].value!="")
+{
+	this.queryText=this.queryText+" and wsn.CUST_ID="+"'"+params['custName'].value+"'";
+}
+
+this.queryText=this.queryText+" group by pkc.PICKED_DATE,"+
+    	"pkc.PRODUCT_NO,"+
+    	"wc.VOLUME,"+
+    	"wc.GROSS_WEIGHT,"+
+    	"wc.CATEGORY_NAME,"+
+    	"wsn.CARGO_OWNER_NAME,"+
+    	"pkc.PRODUCT_DATE,"+
+    	"pkc.SKU_NO,"+
+		"pkc.CARGO_NAME,"+
+		"wsn.ACTION_GATEGORY";]]></method>
+            <property name="dataSource">dsCargoOut</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">PICKED_DATE</property>
+                    <property name="nativeName">PICKED_DATE</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">PRODUCT_NO</property>
+                    <property name="nativeName">PRODUCT_NO</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">VOLUME</property>
+                    <property name="nativeName">VOLUME</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">GROSS_WEIGHT</property>
+                    <property name="nativeName">GROSS_WEIGHT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">CATEGORY_NAME</property>
+                    <property name="nativeName">CATEGORY_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">SUM_PICKED_VOLUME</property>
+                    <property name="nativeName">SUM_PICKED_VOLUME</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">SUM_PICKED_GROSSWEIGHT</property>
+                    <property name="nativeName">SUM_PICKED_GROSSWEIGHT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">CARGO_OWNER_NAME</property>
+                    <property name="nativeName">CARGO_OWNER_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">PRODUCT_DATE</property>
+                    <property name="nativeName">PRODUCT_DATE</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">SKU_NO</property>
+                    <property name="nativeName">SKU_NO</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">CARGO_NAME</property>
+                    <property name="nativeName">CARGO_NAME</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">SUM_PICKED_QUANTITY</property>
+                    <property name="nativeName">SUM_PICKED_QUANTITY</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">PICKED_MEASUREMENT</property>
+                    <property name="nativeName">PICKED_MEASUREMENT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">PICKED_GROSS_WEIGHT</property>
+                    <property name="nativeName">PICKED_GROSS_WEIGHT</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">PICKED_VOLUME</property>
+                    <property name="nativeName">PICKED_VOLUME</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">ACTION_GATEGORY</property>
+                    <property name="nativeName">ACTION_GATEGORY</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select 
+    	
+    	pkc.PICKED_DATE,
+    	pkc.PRODUCT_NO,
+    	wc.VOLUME,
+    	wc.GROSS_WEIGHT,
+    	wc.CATEGORY_NAME,
+    	sum(ifnull(wc.VOLUME,0) * ifnull(pkc.QUANTITY,0)) as SUM_PICKED_VOLUME,
+    	sum(ifnull(wc.GROSS_WEIGHT,0) * ifnull(pkc.QUANTITY,0)) as SUM_PICKED_GROSSWEIGHT,
+    	wsn.CARGO_OWNER_NAME,
+    	pkc.PRODUCT_DATE,
+    	pkc.SKU_NO,
+		pkc.CARGO_NAME,
+		sum(ifnull(pkc.QUANTITY,0)) as SUM_PICKED_QUANTITY,
+		sum(ifnull(pkc.MEASUREMENT,0)) as PICKED_MEASUREMENT,
+		sum(ifnull(pkc.GROSS_WEIGHT,0)) as PICKED_GROSS_WEIGHT,
+		sum(ifnull(pkc.VOLUME,0)) as PICKED_VOLUME,
+		wsn.ACTION_GATEGORY
+	
+	
+ from W_PICKED_CARGO pkc,
+      W_STORAGE_NOTE wsn,
+      W_STORAGE_NOTE_CARGO snc,
+      W_CARGO wc
+      
+where pkc.OUT_STORAGE_NOTE_NO=wsn.STORAGE_NOTE_NO 
+  and pkc.CARGO_ID=wc.ID
+  and pkc.OUT_STORAGE_NOTE_CARGO_ID=snc.ID
+  and pkc.removed=0
+ 
+  and pkc.COMP_CODE=? 
+  ]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="110">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="246">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="247">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="table_header_row" id="504">
+            <property name="backgroundColor">#FFFF80</property>
+        </style>
+        <style name="NewStyle" id="629">
+            <property name="backgroundColor">#DDFFFF</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="height">297mm</property>
+            <property name="width">310mm</property>
+            <property name="leftMargin">0.25mm</property>
+            <property name="rightMargin">0in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="653">
+            <property name="width">11.9375in</property>
+            <column id="654">
+                <property name="width">11.9375in</property>
+            </column>
+            <row id="655">
+                <cell id="656">
+                    <label id="245">
+                        <property name="fontFamily">sans-serif</property>
+                        <property name="fontSize">x-large</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="textAlign">center</property>
+                        <text-property name="text">出库汇总表</text-property>
+                    </label>
+                </cell>
+            </row>
+            <row id="657">
+                <cell id="658">
+                    <table id="163">
+                        <property name="width">11.84375in</property>
+                        <property name="dataSet">dataCargoOut</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">CARGO_OWNER_NAME</property>
+                                <text-property name="displayName">CARGO_OWNER_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CARGO_OWNER_NAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SKU_NO</property>
+                                <text-property name="displayName">SKU_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SKU_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CARGO_NAME</property>
+                                <text-property name="displayName">CARGO_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CARGO_NAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PICKED_MEASUREMENT</property>
+                                <text-property name="displayName">PICKED_MEASUREMENT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PICKED_MEASUREMENT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PICKED_VOLUME</property>
+                                <text-property name="displayName">PICKED_VOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PICKED_VOLUME"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PICKED_GROSS_WEIGHT</property>
+                                <text-property name="displayName">PICKED_GROSS_WEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PICKED_GROSS_WEIGHT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PICKED_DATE</property>
+                                <text-property name="displayName">PICKED_DATE</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PICKED_DATE"]</expression>
+                                <property name="dataType">date</property>
+                            </structure>
+                            <structure>
+                                <property name="name">列绑定</property>
+                                <expression name="expression" type="javascript">new Date()</expression>
+                                <property name="dataType">string</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">CATEGORY_NAME</property>
+                                <text-property name="displayName">CATEGORY_NAME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["CATEGORY_NAME"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">PRODUCT_NO</property>
+                                <text-property name="displayName">PRODUCT_NO</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["PRODUCT_NO"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">ACTION_GATEGORY</property>
+                                <text-property name="displayName">ACTION_GATEGORY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["ACTION_GATEGORY"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">VOLUME</property>
+                                <text-property name="displayName">VOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["VOLUME"]</expression>
+                                <property name="dataType">decimal</property>
+                                <property name="allowExport">true</property>
+                            </structure>
+                            <structure>
+                                <property name="name">GROSS_WEIGHT</property>
+                                <text-property name="displayName">GROSS_WEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["GROSS_WEIGHT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SUM_PICKED_QUANTITY</property>
+                                <text-property name="displayName">SUM_PICKED_QUANTITY</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SUM_PICKED_QUANTITY"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SUM_PICKED_VOLUME</property>
+                                <text-property name="displayName">SUM_PICKED_VOLUME</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SUM_PICKED_VOLUME"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                            <structure>
+                                <property name="name">SUM_PICKED_GROSSWEIGHT</property>
+                                <text-property name="displayName">SUM_PICKED_GROSSWEIGHT</text-property>
+                                <expression name="expression" type="javascript">dataSetRow["SUM_PICKED_GROSSWEIGHT"]</expression>
+                                <property name="dataType">decimal</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">50</property>
+                        <list-property name="sort">
+                            <structure>
+                                <expression name="key" type="javascript">row["PICKED_DATE"]</expression>
+                                <property name="direction">desc</property>
+                                <property name="strength">-1</property>
+                            </structure>
+                        </list-property>
+                        <column id="189">
+                            <property name="width">1.6875in</property>
+                        </column>
+                        <column id="269">
+                            <property name="width">0.6354166666666666in</property>
+                        </column>
+                        <column id="265">
+                            <property name="width">1.03125in</property>
+                        </column>
+                        <column id="289">
+                            <property name="width">2.1770833333333335in</property>
+                        </column>
+                        <column id="257">
+                            <property name="width">0.8020833333333334in</property>
+                        </column>
+                        <column id="273">
+                            <property name="width">0.6145833333333334in</property>
+                        </column>
+                        <column id="277">
+                            <property name="width">0.8541666666666666in</property>
+                        </column>
+                        <column id="298">
+                            <property name="width">0.5833333333333334in</property>
+                        </column>
+                        <column id="302">
+                            <property name="width">0.8645833333333334in</property>
+                        </column>
+                        <column id="312">
+                            <property name="width">0.6354166666666666in</property>
+                        </column>
+                        <column id="316">
+                            <property name="width">0.9791666666666666in</property>
+                        </column>
+                        <column id="336">
+                            <property name="width">0.9791666666666666in</property>
+                        </column>
+                        <header>
+                            <row id="164">
+                                <cell id="169">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="170">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontFamily">sans-serif</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="color">black</property>
+                                        <text-property name="text">货主</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="266">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="278">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">类别</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="262">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="280">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料代码</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="286">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="290">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料描述</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="254">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="283">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料组</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="270">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="284">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">数量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="274">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="285">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">单位体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="295">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="303">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">体积</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="299">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="304">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">单位重量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="309">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="317">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">重量</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="313">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="318">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">出库日期</text-property>
+                                    </label>
+                                </cell>
+                                <cell id="333">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <label id="345">
+                                        <property name="style">NewStyle</property>
+                                        <property name="fontWeight">bold</property>
+                                        <text-property name="text">物料批次</text-property>
+                                    </label>
+                                </cell>
+                            </row>
+                        </header>
+                        <group id="747">
+                            <property name="groupName">GroupByPickedDate</property>
+                            <expression name="keyExpr" type="javascript">row["PICKED_DATE"]</expression>
+                            <structure name="toc">
+                                <expression name="expressionValue" type="javascript">row["PICKED_DATE"]</expression>
+                                <property name="TOCStyle">NewStyle</property>
+                            </structure>
+                            <property name="hideDetail">false</property>
+                        </group>
+                        <detail>
+                            <row id="734">
+                                <cell id="735">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="625">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">CARGO_OWNER_NAME</property>
+                                    </data>
+                                </cell>
+                                <cell id="736">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="616">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">ACTION_GATEGORY</property>
+                                    </data>
+                                </cell>
+                                <cell id="737">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="281">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">SKU_NO</property>
+                                        <list-property name="action">
+                                            <structure>
+                                                <property name="linkType">none</property>
+                                            </structure>
+                                        </list-property>
+                                    </data>
+                                </cell>
+                                <cell id="738">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="292">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">CARGO_NAME</property>
+                                    </data>
+                                </cell>
+                                <cell id="739">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="610">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">CATEGORY_NAME</property>
+                                    </data>
+                                </cell>
+                                <cell id="740">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="731">
+                                        <property name="resultSetColumn">SUM_PICKED_QUANTITY</property>
+                                    </data>
+                                </cell>
+                                <cell id="741">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="617">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                                        </structure>
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">VOLUME</property>
+                                    </data>
+                                </cell>
+                                <cell id="742">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="732">
+                                        <property name="resultSetColumn">SUM_PICKED_VOLUME</property>
+                                    </data>
+                                </cell>
+                                <cell id="743">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="618">
+                                        <structure name="numberFormat">
+                                            <property name="category">Fixed</property>
+                                            <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                                        </structure>
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">GROSS_WEIGHT</property>
+                                    </data>
+                                </cell>
+                                <cell id="744">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="733">
+                                        <property name="resultSetColumn">SUM_PICKED_GROSSWEIGHT</property>
+                                    </data>
+                                </cell>
+                                <cell id="745">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="320">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">PICKED_DATE</property>
+                                    </data>
+                                </cell>
+                                <cell id="746">
+                                    <property name="borderBottomColor">#000000</property>
+                                    <property name="borderBottomStyle">solid</property>
+                                    <property name="borderBottomWidth">thin</property>
+                                    <property name="borderLeftColor">#000000</property>
+                                    <property name="borderLeftStyle">solid</property>
+                                    <property name="borderLeftWidth">thin</property>
+                                    <property name="borderRightColor">#000000</property>
+                                    <property name="borderRightStyle">solid</property>
+                                    <property name="borderRightWidth">thin</property>
+                                    <property name="borderTopColor">#000000</property>
+                                    <property name="borderTopStyle">solid</property>
+                                    <property name="borderTopWidth">thin</property>
+                                    <data id="611">
+                                        <property name="textAlign">center</property>
+                                        <property name="resultSetColumn">PRODUCT_NO</property>
+                                    </data>
+                                </cell>
+                            </row>
+                        </detail>
+                    </table>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
